@@ -6,9 +6,13 @@
 
 package com.epic.studentmanagementsystemepicdemo.service;
 
+import com.epic.studentmanagementsystemepicdemo.exception.ResourceNotFoundException;
 import com.epic.studentmanagementsystemepicdemo.model.User;
 import com.epic.studentmanagementsystemepicdemo.repository.impl.UserRepository;
+import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
 
 //this class is using for authentication (user register and login)
 @Service
@@ -28,11 +32,21 @@ public class AuthService {
     }
 
     public String login(User user) {
-        User dbUser = userRepository.findByUsername(user.getName());
-        if (!dbUser.getPassword().equals(user.getPassword())) {
-            throw new RuntimeException("Username or password is incurrect");
+        if (user.getName() == null || user.getPassword() == null) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Username or password cannot be empty");
         }
-        return "User Login successfully";
+
+        try {
+            User dbUser = userRepository.findByUsername(user.getName());
+
+            if (!dbUser.getPassword().equals(user.getPassword())) {
+                throw new ResponseStatusException(HttpStatus.UNAUTHORIZED, "Username or password is incorrect");
+            }
+
+            return "User Login successfully";
+        } catch (ResourceNotFoundException e) {
+            throw new ResponseStatusException(HttpStatus.UNAUTHORIZED, "Username or password is incorrect");
+        }
 
 
     }

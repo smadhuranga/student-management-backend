@@ -11,7 +11,7 @@ import com.epic.studentmanagementsystemepicdemo.service.AuthService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/vi/auth")
+@RequestMapping("/api/v1/auth")
 @CrossOrigin
 public class Authcontroller {
 
