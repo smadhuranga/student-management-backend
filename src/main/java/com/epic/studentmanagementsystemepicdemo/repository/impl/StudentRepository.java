@@ -23,6 +23,7 @@ public class StudentRepository {
         this.jdbcTemplate = jdbcTemplate;
     }
 
+    // row mapper for student table (its using for mapping the result set to student object)
     public RowMapper<Student> studentRowMapper = (rs, rowNum) -> {
         Student s = new Student();
         s.setId(rs.getInt("id"));
@@ -35,7 +36,7 @@ public class StudentRepository {
         return s;
     };
 
-
+    // save student
     public int saveStudent(Student s) {
         String sql = """
                 INSERT INTO Student
@@ -52,6 +53,7 @@ public class StudentRepository {
         );
     }
 
+    // get all students
     public List<Student> getAllStudents() {
         String sql = "SELECT * FROM Student ORDER BY Id DESC";
         return jdbcTemplate.query(sql, studentRowMapper);
@@ -67,6 +69,7 @@ public class StudentRepository {
        }
     }
 
+    // update student by id
     public int update(Student s) {
         String sql = """
                 UPDATE Student
@@ -92,6 +95,7 @@ public class StudentRepository {
         return rows;
     }
 
+    // delete student by id
     public int delete(int id) {
         String sql = "DELETE FROM Student WHERE Id=?";
         int rows = jdbcTemplate.update(sql, id);

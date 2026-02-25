@@ -15,6 +15,7 @@ import org.springframework.security.web.SecurityFilterChain;
 @Configuration
 public class SecurityConfig {
 
+    // security configuration(this is using for security configuration) its means disable csrf and cors
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http

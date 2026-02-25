@@ -10,6 +10,7 @@ import com.epic.studentmanagementsystemepicdemo.model.User;
 import com.epic.studentmanagementsystemepicdemo.repository.impl.UserRepository;
 import org.springframework.stereotype.Service;
 
+//this class is using for authentication (user register and login)
 @Service
 public class AuthService {
     private final UserRepository userRepository;

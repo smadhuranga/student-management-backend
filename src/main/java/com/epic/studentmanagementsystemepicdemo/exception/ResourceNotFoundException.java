@@ -7,6 +7,7 @@
 package com.epic.studentmanagementsystemepicdemo.exception;
 
 public class ResourceNotFoundException extends RuntimeException {
+    // this class extends RuntimeException it means it is a checked exception
     public ResourceNotFoundException(String msg) {
         super(msg);
     }

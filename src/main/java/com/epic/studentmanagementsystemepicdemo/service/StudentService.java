@@ -12,6 +12,8 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+
+//this class is using for student service (CRUD operations)
 @Service
 public class StudentService {
 
@@ -26,7 +28,6 @@ public class StudentService {
     }
 
     public Student findStudentById(int studentId) {
-
         return studentRepository.findById(studentId);
     }
 

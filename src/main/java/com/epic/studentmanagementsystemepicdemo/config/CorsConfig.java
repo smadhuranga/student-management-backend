@@ -15,6 +15,8 @@ import org.springframework.web.filter.CorsFilter;
 
 @Configuration
 public class CorsConfig {
+
+    // cors configuration(its means cross origin resource sharing) its allow to access the resources from different origin
     @Bean
     public CorsFilter corsFilter() {
         CorsConfiguration config = new CorsConfiguration();

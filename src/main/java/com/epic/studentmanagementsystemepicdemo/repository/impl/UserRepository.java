@@ -16,6 +16,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class UserRepository {
 
+    // row mapper for user table (its using for mapping the result set to user object)
     private final RowMapper<User> userRowMapper = (rs, rowNum) -> {
         User u = new User();
         u.setId(rs.getInt("Id"));
@@ -29,6 +30,7 @@ public class UserRepository {
         this.jdbcTemplate = jdbcTemplate;
     }
 
+    // find user by username
     public User findByUsername(String username) {
         String sql = "select * from User where Name = ?";
         try {
@@ -38,6 +40,7 @@ public class UserRepository {
         }
     }
 
+    // save user
     public int saveUser(User user) {
         String sql = "INSERT INTO User (Name, Password) VALUES (?, ?)";
         return jdbcTemplate.update(sql,
