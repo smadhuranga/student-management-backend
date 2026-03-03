@@ -1,3 +1,6 @@
+CREATE DATABASE student_db;
+USE student_db;
+
 Create table User(
                      Id int auto_increment primary key,
                      Name varchar(50),
