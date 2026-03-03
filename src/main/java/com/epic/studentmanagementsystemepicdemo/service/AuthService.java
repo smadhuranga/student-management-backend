@@ -8,8 +8,7 @@ package com.epic.studentmanagementsystemepicdemo.service;
 
 import com.epic.studentmanagementsystemepicdemo.exception.ResourceNotFoundException;
 import com.epic.studentmanagementsystemepicdemo.model.User;
-import com.epic.studentmanagementsystemepicdemo.repository.impl.UserRepository;
-import org.springframework.dao.EmptyResultDataAccessException;
+import com.epic.studentmanagementsystemepicdemo.repository.UserRepo;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
@@ -17,9 +16,9 @@ import org.springframework.web.server.ResponseStatusException;
 //this class is using for authentication (user register and login)
 @Service
 public class AuthService {
-    private final UserRepository userRepository;
+    private final UserRepo userRepository;
 
-    public AuthService(UserRepository userRepository) {
+    public AuthService(UserRepo userRepository) {
         this.userRepository = userRepository;
     }
 

@@ -8,13 +8,14 @@ package com.epic.studentmanagementsystemepicdemo.repository.impl;
 
 import com.epic.studentmanagementsystemepicdemo.exception.ResourceNotFoundException;
 import com.epic.studentmanagementsystemepicdemo.model.User;
+import com.epic.studentmanagementsystemepicdemo.repository.UserRepo;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class UserRepository {
+public class UserRepository implements UserRepo {
 
     // row mapper for user table (its using for mapping the result set to user object)
     private final RowMapper<User> userRowMapper = (rs, rowNum) -> {

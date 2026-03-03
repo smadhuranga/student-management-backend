@@ -8,7 +8,8 @@ package com.epic.studentmanagementsystemepicdemo.service;
 
 import com.epic.studentmanagementsystemepicdemo.exception.DuplicateEmailException;
 import com.epic.studentmanagementsystemepicdemo.model.Student;
-import com.epic.studentmanagementsystemepicdemo.repository.impl.StudentRepository;
+import com.epic.studentmanagementsystemepicdemo.repository.StudentRepo;
+
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -18,9 +19,9 @@ import java.util.List;
 @Service
 public class StudentService {
 
-    private final StudentRepository studentRepository;
+    private final StudentRepo studentRepository;
 
-    public StudentService(StudentRepository studentRepository) {
+    public StudentService(StudentRepo studentRepository) {
         this.studentRepository = studentRepository;
     }
 
