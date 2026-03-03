@@ -106,4 +106,16 @@ public class StudentRepository {
         return rows;
 
     }
+
+    public boolean existsByEmail(String email) {
+        String sql = "SELECT COUNT(*) FROM Student WHERE email = ?";
+        Integer count = jdbcTemplate.queryForObject(sql, Integer.class, email);
+        return count != null && count > 0;
+    }
+
+    public boolean existsByEmailAndIdNot(String email, int id) {
+        String sql = "SELECT COUNT(*) FROM Student WHERE email = ? AND id != ?";
+        Integer count = jdbcTemplate.queryForObject(sql, Integer.class, email, id);
+        return count != null && count > 0;
+    }
 }
