@@ -6,6 +6,7 @@
 
 package com.epic.studentmanagementsystemepicdemo.controller;
 
+import com.epic.studentmanagementsystemepicdemo.dto.StudentRequestDTO;
 import com.epic.studentmanagementsystemepicdemo.model.Student;
 import com.epic.studentmanagementsystemepicdemo.service.StudentService;
 import org.springframework.web.bind.annotation.*;
@@ -26,9 +27,12 @@ public class StudentController {
 
     // create student
     @PostMapping
-    public String createStudent(@RequestBody Student student) {
-        studentService.createStudent(student);
-        return "Student Create Successfuly";
+    public String createStudent(@RequestBody StudentRequestDTO request) {
+
+        studentService.createStudent(request);
+
+        return "Student created and enrolled successfully";
+
     }
 
     // get all students
@@ -45,8 +49,8 @@ public class StudentController {
 
     // update student by id
     @PutMapping("/{id}")
-    public String updateStudent(@PathVariable int id, @RequestBody Student student) {
-        studentService.updateStudent(id, student);
+    public String updateStudent(@PathVariable int id, @RequestBody StudentRequestDTO request) {
+        studentService.updateStudent(id, request);
         return "Student updated successfully";
     }
 

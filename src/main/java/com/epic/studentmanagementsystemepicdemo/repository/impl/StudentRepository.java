@@ -40,18 +40,24 @@ public class StudentRepository implements StudentRepo {
     // save student
     public int saveStudent(Student s) {
         String sql = """
-                INSERT INTO Student
-                (firstName, lastName, email, dateOfBirth, enrollmentDate)
-                VALUES (?, ?, ?, ?, ?)
-                """;
+        INSERT INTO Student
+        (firstName, lastName, email, dateOfBirth, enrollmentDate)
+        VALUES (?, ?, ?, ?, ?)
+    """;
 
-        return jdbcTemplate.update(sql,
+        jdbcTemplate.update(sql,
                 s.getFirstName(),
                 s.getLastName(),
                 s.getEmail(),
                 s.getDateOfBirth(),
                 s.getEnrollmentDate()
         );
+
+
+        Integer id = jdbcTemplate.queryForObject(
+                "SELECT LAST_INSERT_ID()", Integer.class);
+
+        return id;
     }
 
     // get all students
@@ -118,5 +124,9 @@ public class StudentRepository implements StudentRepo {
         String sql = "SELECT COUNT(*) FROM Student WHERE email = ? AND id != ?";
         Integer count = jdbcTemplate.queryForObject(sql, Integer.class, email, id);
         return count != null && count > 0;
+    }
+    public void removeAllEnrollments(int studentId){
+        String sql = "DELETE FROM Student_Course WHERE studentId=?";
+        jdbcTemplate.update(sql, studentId);
     }
 }
