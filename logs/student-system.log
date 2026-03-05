@@ -1,27 +1,39 @@
-2026-03-04T14:54:33.105+05:30  INFO 3272 --- [StudentManagementSystemEpicdemo] [restartedMain] udentManagementSystemEpicdemoApplication : Starting StudentManagementSystemEpicdemoApplication using Java 22.0.2 with PID 3272 (C:\Users\supun_m\Desktop\Epic\student-management-backend\target\classes started by supun_m in C:\Users\supun_m\Desktop\Epic\student-management-backend)
-2026-03-04T14:54:33.123+05:30  INFO 3272 --- [StudentManagementSystemEpicdemo] [restartedMain] udentManagementSystemEpicdemoApplication : No active profile set, falling back to 1 default profile: "default"
-2026-03-04T14:54:33.198+05:30  INFO 3272 --- [StudentManagementSystemEpicdemo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-03-04T14:54:33.198+05:30  INFO 3272 --- [StudentManagementSystemEpicdemo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-03-04T14:54:34.281+05:30  INFO 3272 --- [StudentManagementSystemEpicdemo] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
-2026-03-04T14:54:34.281+05:30  INFO 3272 --- [StudentManagementSystemEpicdemo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-03-04T14:54:34.281+05:30  INFO 3272 --- [StudentManagementSystemEpicdemo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
-2026-03-04T14:54:34.331+05:30  INFO 3272 --- [StudentManagementSystemEpicdemo] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1133 ms
-2026-03-04T14:54:34.588+05:30  WARN 3272 --- [StudentManagementSystemEpicdemo] [restartedMain] .s.a.UserDetailsServiceAutoConfiguration : 
+2026-03-05T08:21:19.066+05:30  INFO 10676 --- [StudentManagementSystemEpicdemo] [restartedMain] udentManagementSystemEpicdemoApplication : Starting StudentManagementSystemEpicdemoApplication using Java 22.0.2 with PID 10676 (C:\Users\supun_m\Desktop\Epic\student-management-backend\target\classes started by supun_m in C:\Users\supun_m\Desktop\Epic\student-management-backend)
+2026-03-05T08:21:19.078+05:30  INFO 10676 --- [StudentManagementSystemEpicdemo] [restartedMain] udentManagementSystemEpicdemoApplication : No active profile set, falling back to 1 default profile: "default"
+2026-03-05T08:21:19.174+05:30  INFO 10676 --- [StudentManagementSystemEpicdemo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-05T08:21:19.175+05:30  INFO 10676 --- [StudentManagementSystemEpicdemo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-05T08:21:20.566+05:30  INFO 10676 --- [StudentManagementSystemEpicdemo] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-03-05T08:21:20.587+05:30  INFO 10676 --- [StudentManagementSystemEpicdemo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-05T08:21:20.588+05:30  INFO 10676 --- [StudentManagementSystemEpicdemo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-03-05T08:21:20.646+05:30  INFO 10676 --- [StudentManagementSystemEpicdemo] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1469 ms
+2026-03-05T08:21:20.950+05:30  WARN 10676 --- [StudentManagementSystemEpicdemo] [restartedMain] .s.a.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: 8130de1a-6831-4eee-b5fe-8a46e176d8ff
+Using generated security password: 4704507c-dc03-46b5-b6ce-140ff91e1458
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2026-03-04T14:54:34.588+05:30  INFO 3272 --- [StudentManagementSystemEpicdemo] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2026-03-04T14:54:35.023+05:30  INFO 3272 --- [StudentManagementSystemEpicdemo] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
-2026-03-04T14:54:35.031+05:30  INFO 3272 --- [StudentManagementSystemEpicdemo] [restartedMain] udentManagementSystemEpicdemoApplication : Started StudentManagementSystemEpicdemoApplication in 2.458 seconds (process running for 3.471)
-2026-03-04T14:55:08.196+05:30  INFO 3272 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-03-04T14:55:08.196+05:30  INFO 3272 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-03-04T14:55:08.196+05:30  INFO 3272 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2026-03-04T14:55:08.381+05:30 DEBUG 3272 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
-2026-03-04T14:55:08.381+05:30 DEBUG 3272 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select * from User where Name = ?]
-2026-03-04T14:55:08.381+05:30  INFO 3272 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-03-04T14:55:08.845+05:30  INFO 3272 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6549d000
-2026-03-04T14:55:08.862+05:30  INFO 3272 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-03-04T14:55:10.032+05:30 DEBUG 3272 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
-2026-03-04T14:55:10.084+05:30 DEBUG 3272 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-05T08:21:20.962+05:30  INFO 10676 --- [StudentManagementSystemEpicdemo] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-03-05T08:21:21.548+05:30  INFO 10676 --- [StudentManagementSystemEpicdemo] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
+2026-03-05T08:21:21.557+05:30  INFO 10676 --- [StudentManagementSystemEpicdemo] [restartedMain] udentManagementSystemEpicdemoApplication : Started StudentManagementSystemEpicdemoApplication in 3.37 seconds (process running for 4.947)
+2026-03-05T08:22:02.534+05:30  INFO 10676 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-05T08:22:02.534+05:30  INFO 10676 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-05T08:22:02.534+05:30  INFO 10676 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-03-05T08:22:02.706+05:30 DEBUG 10676 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-05T08:22:02.706+05:30 DEBUG 10676 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select * from User where Name = ?]
+2026-03-05T08:22:02.706+05:30  INFO 10676 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-05T08:22:03.385+05:30  INFO 10676 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@20756e9f
+2026-03-05T08:22:03.385+05:30  INFO 10676 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-05T08:22:05.038+05:30 DEBUG 10676 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-05T08:22:05.104+05:30 DEBUG 10676 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-05T08:22:06.312+05:30 DEBUG 10676 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-05T08:22:06.335+05:30 DEBUG 10676 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-05T08:22:19.134+05:30 DEBUG 10676 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-05T08:22:19.141+05:30 DEBUG 10676 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-05T08:29:21.811+05:30 DEBUG 10676 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-05T08:29:21.824+05:30 DEBUG 10676 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-05T08:29:26.784+05:30 DEBUG 10676 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-05T08:29:26.793+05:30 DEBUG 10676 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-05T08:50:03.172+05:30  INFO 10676 --- [StudentManagementSystemEpicdemo] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-05T08:50:03.188+05:30  INFO 10676 --- [StudentManagementSystemEpicdemo] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-05T08:50:03.188+05:30  INFO 10676 --- [StudentManagementSystemEpicdemo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-05T08:50:03.200+05:30  INFO 10676 --- [StudentManagementSystemEpicdemo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
