@@ -40,7 +40,7 @@ public class StudentService {
         student.setLastName(request.getLastName());
         student.setEmail(request.getEmail());
 
-        // ✅ convert LocalDate -> java.util.Date (Student model uses Date)
+        // convert LocalDate -> java.util.Date (Student model uses Date)
         student.setDateOfBirth(toDate(request.getDateOfBirth()));
         student.setEnrollmentDate(toDate(request.getEnrollmentDate()));
 
