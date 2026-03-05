@@ -74,20 +74,20 @@ public class CourseRepository implements CourseRepo {
                 course.getDescription(),
                 course.getId());
 
-        if(rows == 0){
+        if (rows == 0) {
             throw new ResourceNotFoundException("Course not found");
         }
 
         return rows;
     }
 
-    public int deleteCourse(int id){
+    public int deleteCourse(int id) {
 
         String sql = "DELETE FROM Course WHERE Id=?";
 
-        int rows = jdbcTemplate.update(sql,id);
+        int rows = jdbcTemplate.update(sql, id);
 
-        if(rows == 0){
+        if (rows == 0) {
             throw new ResourceNotFoundException("Course not found");
         }
 

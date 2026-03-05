@@ -24,7 +24,7 @@ public class EnrollmentRepository implements EnrollmentRepo {
                 (studentId, courseId, enrollmentDate)
                 VALUES (?, ?, NOW())
                 """;
-        jdbcTemplate.update(sql , studentId,courseId);
+        jdbcTemplate.update(sql, studentId, courseId);
     }
 
     @Override
@@ -48,15 +48,14 @@ public class EnrollmentRepository implements EnrollmentRepo {
                 """;
 
 
-
-        return jdbcTemplate.query(sql,(rs,rowNum)->{
+        return jdbcTemplate.query(sql, (rs, rowNum) -> {
             Course c = new Course();
             c.setId(rs.getInt("Id"));
             c.setCourseName(rs.getString("courseName"));
             c.setCourseCode(rs.getString("courseCode"));
             c.setDescription(rs.getString("description"));
             return c;
-        },studentId);
+        }, studentId);
     }
 
     @Override
@@ -69,16 +68,15 @@ public class EnrollmentRepository implements EnrollmentRepo {
                 WHERE sc.courseId = ?
                 """;
 
-        return jdbcTemplate.query(sql,(rs,rowNum)->{
+        return jdbcTemplate.query(sql, (rs, rowNum) -> {
             Student s = new Student();
             s.setId(rs.getInt("Id"));
             s.setFirstName(rs.getString("firstName"));
             s.setLastName(rs.getString("lastName"));
             s.setEmail(rs.getString("email"));
             return s;
-        },courseId);
+        }, courseId);
     }
-
 
 
     @Override
@@ -90,10 +88,10 @@ public class EnrollmentRepository implements EnrollmentRepo {
     @Override
     public boolean existsEnrollment(int studentId, int courseId) {
         String sql = """
-        SELECT COUNT(*)
-        FROM Student_Course
-        WHERE studentId=? AND courseId=?
-        """;
+                SELECT COUNT(*)
+                FROM Student_Course
+                WHERE studentId=? AND courseId=?
+                """;
 
         Integer count = jdbcTemplate.queryForObject(sql, Integer.class, studentId, courseId);
         return count != null && count > 0;

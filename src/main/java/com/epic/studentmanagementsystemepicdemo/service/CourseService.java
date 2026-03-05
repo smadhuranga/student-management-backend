@@ -30,7 +30,8 @@ public class CourseService {
         course.setId(id);
         courseRepo.updateCourse(course);
     }
-    public void deleteCourse(int id){
+
+    public void deleteCourse(int id) {
         courseRepo.deleteCourse(id);
     }
 

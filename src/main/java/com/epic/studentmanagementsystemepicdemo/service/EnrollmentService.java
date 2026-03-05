@@ -27,10 +27,11 @@ public class EnrollmentService {
         enrollmentRepo.removeEnrollment(studentId, courseId);
     }
 
-    public List<Course> getCoursesByStudent(int studentId){
+    public List<Course> getCoursesByStudent(int studentId) {
         return enrollmentRepo.getCoursesByStudent(studentId);
     }
-    public  List<Student> getStudentsByCourse(int courseId){
+
+    public List<Student> getStudentsByCourse(int courseId) {
         return enrollmentRepo.getStudentsByCourse(courseId);
     }
 }

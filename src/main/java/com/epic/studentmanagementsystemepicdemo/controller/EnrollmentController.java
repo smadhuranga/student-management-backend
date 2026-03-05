@@ -14,29 +14,29 @@ public class EnrollmentController {
 
     private final EnrollmentService enrollmentService;
 
-    public EnrollmentController (EnrollmentService enrollmentService){
+    public EnrollmentController(EnrollmentService enrollmentService) {
         this.enrollmentService = enrollmentService;
     }
 
     @PostMapping("/enroll")
-    public String enroll(@RequestParam int studentId, @RequestParam int courseId){
-        enrollmentService.enrollStudent(studentId,courseId);
+    public String enroll(@RequestParam int studentId, @RequestParam int courseId) {
+        enrollmentService.enrollStudent(studentId, courseId);
         return "Student enrolled successfully";
     }
 
     @DeleteMapping("/remove")
-    public String remove(@RequestParam int studentId, @RequestParam int courseId){
-        enrollmentService.removeStudent(studentId,courseId);
+    public String remove(@RequestParam int studentId, @RequestParam int courseId) {
+        enrollmentService.removeStudent(studentId, courseId);
         return "Enrollment removed";
     }
 
     @GetMapping("/student/{studentId}")
-    public List<Course> getCourses(@PathVariable int studentId){
+    public List<Course> getCourses(@PathVariable int studentId) {
         return enrollmentService.getCoursesByStudent(studentId);
     }
 
     @GetMapping("/course/{courseId}")
-    public List<Student> getStudents(@PathVariable int courseId){
+    public List<Student> getStudents(@PathVariable int courseId) {
         return enrollmentService.getStudentsByCourse(courseId);
     }
 

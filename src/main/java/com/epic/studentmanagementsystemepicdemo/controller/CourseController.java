@@ -14,34 +14,34 @@ public class CourseController {
 
     private final CourseService courseService;
 
-    public CourseController (CourseService courseService){
+    public CourseController(CourseService courseService) {
         this.courseService = courseService;
     }
 
     @PostMapping
-    public String createCouser(@RequestBody Course course){
+    public String createCouser(@RequestBody Course course) {
         courseService.createCourse(course);
         return "Course created successfully";
     }
 
     @GetMapping
-    public List<Course> getAllCourses(){
+    public List<Course> getAllCourses() {
         return courseService.getAllCourses();
     }
 
     @GetMapping("/{id}")
-    public Course getCourse(@PathVariable int id){
+    public Course getCourse(@PathVariable int id) {
         return courseService.getCourseById(id);
     }
 
     @PutMapping("/{id}")
-    public String updateCourse(@PathVariable int id, @RequestBody Course course){
-        courseService.updateCourse(id,course);
+    public String updateCourse(@PathVariable int id, @RequestBody Course course) {
+        courseService.updateCourse(id, course);
         return "Course updated successfully";
     }
 
     @DeleteMapping("/{id}")
-    public String deleteCourse(@PathVariable int id){
+    public String deleteCourse(@PathVariable int id) {
         courseService.deleteCourse(id);
         return "Course deleted successfully";
     }
