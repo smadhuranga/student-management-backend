@@ -14,11 +14,6 @@ import java.util.List;
 public class CourseRepository implements CourseRepo {
 
     private final JdbcTemplate jdbcTemplate;
-
-    public CourseRepository(JdbcTemplate jdbcTemplate) {
-        this.jdbcTemplate = jdbcTemplate;
-    }
-
     RowMapper<Course> courseRowMapper = (rs, rowNum) -> {
         Course c = new Course();
         c.setId(rs.getInt("Id"));
@@ -27,6 +22,10 @@ public class CourseRepository implements CourseRepo {
         c.setDescription(rs.getString("description"));
         return c;
     };
+
+    public CourseRepository(JdbcTemplate jdbcTemplate) {
+        this.jdbcTemplate = jdbcTemplate;
+    }
 
     @Override
     public int saveCourse(Course course) {

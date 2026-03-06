@@ -19,13 +19,6 @@ import java.util.List;
 @Repository
 public class StudentRepository implements StudentRepo {
     private final JdbcTemplate jdbcTemplate;
-
-    public StudentRepository(JdbcTemplate jdbcTemplate) {
-        this.jdbcTemplate = jdbcTemplate;
-    }
-
-    // row mapper for student table (its using for mapping the result set to student object)
-
     public RowMapper<Student> studentRowMapper = (rs, rowNum) -> {
         Student s = new Student();
         s.setId(rs.getInt("id"));
@@ -37,6 +30,12 @@ public class StudentRepository implements StudentRepo {
 
         return s;
     };
+
+    // row mapper for student table (its using for mapping the result set to student object)
+
+    public StudentRepository(JdbcTemplate jdbcTemplate) {
+        this.jdbcTemplate = jdbcTemplate;
+    }
 
     // save student
     @Override

@@ -7,7 +7,6 @@
 package com.epic.studentmanagementsystemepicdemo.repository;
 
 import com.epic.studentmanagementsystemepicdemo.model.Student;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 

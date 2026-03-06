@@ -17,11 +17,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class UserRepository implements UserRepo {
     private final JdbcTemplate jdbcTemplate;
-
-    public UserRepository(JdbcTemplate jdbcTemplate) {
-        this.jdbcTemplate = jdbcTemplate;
-    }
-
     // row mapper for user table (its using for mapping the result set to user object)
     private final RowMapper<User> userRowMapper = (rs, rowNum) -> {
         User u = new User();
@@ -31,6 +26,9 @@ public class UserRepository implements UserRepo {
         return u;
     };
 
+    public UserRepository(JdbcTemplate jdbcTemplate) {
+        this.jdbcTemplate = jdbcTemplate;
+    }
 
     // find user by username
     @Override
