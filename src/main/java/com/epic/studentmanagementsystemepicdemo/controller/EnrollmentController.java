@@ -1,5 +1,7 @@
 package com.epic.studentmanagementsystemepicdemo.controller;
 
+import com.epic.studentmanagementsystemepicdemo.dto.CourseStudentDTO;
+import com.epic.studentmanagementsystemepicdemo.dto.StudentCourseDTO;
 import com.epic.studentmanagementsystemepicdemo.model.Course;
 import com.epic.studentmanagementsystemepicdemo.model.Student;
 import com.epic.studentmanagementsystemepicdemo.service.EnrollmentService;
@@ -40,6 +42,16 @@ public class EnrollmentController {
         return enrollmentService.getStudentsByCourse(courseId);
     }
 
+    // NEW: for student details page with enrollment date
+    @GetMapping("/student/{studentId}/details")
+    public List<StudentCourseDTO> getStudentCourseDetails(@PathVariable int studentId) {
+        return enrollmentService.getStudentCourseDetails(studentId);
+    }
 
+    // NEW: for course enrollment modal
+    @GetMapping("/course/{courseId}/details")
+    public List<CourseStudentDTO> getCourseStudentDetails(@PathVariable int courseId) {
+        return enrollmentService.getCourseStudentDetails(courseId);
+    }
 }
 

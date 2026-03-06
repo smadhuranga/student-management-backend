@@ -1,5 +1,7 @@
 package com.epic.studentmanagementsystemepicdemo.service;
 
+import com.epic.studentmanagementsystemepicdemo.dto.CourseStudentDTO;
+import com.epic.studentmanagementsystemepicdemo.dto.StudentCourseDTO;
 import com.epic.studentmanagementsystemepicdemo.model.Course;
 import com.epic.studentmanagementsystemepicdemo.model.Student;
 import com.epic.studentmanagementsystemepicdemo.repository.EnrollmentRepo;
@@ -8,30 +10,13 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
-public class EnrollmentService {
-    private final EnrollmentRepo enrollmentRepo;
+public interface EnrollmentService {
+    void enrollStudent(int studentId, int courseId);
+    void removeStudent(int studentId, int courseId);
 
-    public EnrollmentService(EnrollmentRepo enrollmentRepo) {
-        this.enrollmentRepo = enrollmentRepo;
-    }
+    List<Course> getCoursesByStudent(int studentId);
+    List<Student> getStudentsByCourse(int courseId);
 
-    public void enrollStudent(int studentId, int courseId) {
-        if (enrollmentRepo.existsEnrollment(studentId, courseId)) {
-            throw new RuntimeException("Student already enrolled in this course");
-        }
-        enrollmentRepo.enrollStudent(studentId, courseId);
-    }
-
-    public void removeStudent(int studentId, int courseId) {
-        enrollmentRepo.removeEnrollment(studentId, courseId);
-    }
-
-    public List<Course> getCoursesByStudent(int studentId) {
-        return enrollmentRepo.getCoursesByStudent(studentId);
-    }
-
-    public List<Student> getStudentsByCourse(int courseId) {
-        return enrollmentRepo.getStudentsByCourse(courseId);
-    }
+    List<StudentCourseDTO> getStudentCourseDetails(int studentId);
+    List<CourseStudentDTO> getCourseStudentDetails(int courseId);
 }
