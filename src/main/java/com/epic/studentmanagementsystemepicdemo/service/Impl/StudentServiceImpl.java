@@ -32,6 +32,7 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
+    @Transactional
     public void createStudent(StudentRequestDTO request) {
         if (studentRepository.existsByEmail(request.getEmail())) {
             throw new DuplicateEmailException("Email already exists");
@@ -97,6 +98,7 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
+    @Transactional
     public void deleteStudentById(int studentId) {
         enrollmentRepo.removeEnrollmentsByStudent(studentId);
         studentRepository.delete(studentId);

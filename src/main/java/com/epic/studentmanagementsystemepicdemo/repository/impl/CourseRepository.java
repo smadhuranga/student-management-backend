@@ -28,6 +28,7 @@ public class CourseRepository implements CourseRepo {
         return c;
     };
 
+    @Override
     public int saveCourse(Course course) {
 
         String sql = """
@@ -42,6 +43,7 @@ public class CourseRepository implements CourseRepo {
                 course.getDescription());
     }
 
+    @Override
     public List<Course> getAllCourses() {
 
         String sql = "SELECT * FROM Course";
@@ -49,6 +51,7 @@ public class CourseRepository implements CourseRepo {
         return jdbcTemplate.query(sql, courseRowMapper);
     }
 
+    @Override
     public Course findById(int id) {
 
         String sql = "SELECT * FROM Course WHERE Id=?";
@@ -60,6 +63,7 @@ public class CourseRepository implements CourseRepo {
         }
     }
 
+    @Override
     public int updateCourse(Course course) {
 
         String sql = """
@@ -81,6 +85,7 @@ public class CourseRepository implements CourseRepo {
         return rows;
     }
 
+    @Override
     public int deleteCourse(int id) {
 
         String sql = "DELETE FROM Course WHERE Id=?";

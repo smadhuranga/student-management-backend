@@ -25,6 +25,7 @@ public class StudentRepository implements StudentRepo {
     }
 
     // row mapper for student table (its using for mapping the result set to student object)
+
     public RowMapper<Student> studentRowMapper = (rs, rowNum) -> {
         Student s = new Student();
         s.setId(rs.getInt("id"));
@@ -38,12 +39,13 @@ public class StudentRepository implements StudentRepo {
     };
 
     // save student
+    @Override
     public int saveStudent(Student s) {
         String sql = """
-        INSERT INTO Student
-        (firstName, lastName, email, dateOfBirth, enrollmentDate)
-        VALUES (?, ?, ?, ?, ?)
-    """;
+                    INSERT INTO Student
+                    (firstName, lastName, email, dateOfBirth, enrollmentDate)
+                    VALUES (?, ?, ?, ?, ?)
+                """;
 
         jdbcTemplate.update(sql,
                 s.getFirstName(),
@@ -61,6 +63,7 @@ public class StudentRepository implements StudentRepo {
     }
 
     // get all students
+    @Override
     public List<Student> getAllStudents() {
         String sql = "SELECT * FROM Student ORDER BY Id DESC";
         return jdbcTemplate.query(sql, studentRowMapper);
@@ -69,14 +72,15 @@ public class StudentRepository implements StudentRepo {
     public Student findById(int id) {
         String sql = "SELECT * FROM Student WHERE Id = ?";
 
-       try {
-           return jdbcTemplate.queryForObject(sql, studentRowMapper, id);
-       } catch (EmptyResultDataAccessException e) {
-           throw new ResourceNotFoundException("Student not found");
-       }
+        try {
+            return jdbcTemplate.queryForObject(sql, studentRowMapper, id);
+        } catch (EmptyResultDataAccessException e) {
+            throw new ResourceNotFoundException("Student not found");
+        }
     }
 
     // update student by id
+    @Override
     public int update(Student s) {
         String sql = """
                 UPDATE Student
@@ -103,29 +107,34 @@ public class StudentRepository implements StudentRepo {
     }
 
     // delete student by id
+    @Override
     public int delete(int id) {
         String sql = "DELETE FROM Student WHERE Id=?";
         int rows = jdbcTemplate.update(sql, id);
 
-        if (rows == 0){
-            throw  new ResourceNotFoundException("Student not found");
+        if (rows == 0) {
+            throw new ResourceNotFoundException("Student not found");
         }
         return rows;
 
     }
 
+    @Override
     public boolean existsByEmail(String email) {
         String sql = "SELECT COUNT(*) FROM Student WHERE email = ?";
         Integer count = jdbcTemplate.queryForObject(sql, Integer.class, email);
         return count != null && count > 0;
     }
 
+    @Override
     public boolean existsByEmailAndIdNot(String email, int id) {
         String sql = "SELECT COUNT(*) FROM Student WHERE email = ? AND id != ?";
         Integer count = jdbcTemplate.queryForObject(sql, Integer.class, email, id);
         return count != null && count > 0;
     }
-    public void removeAllEnrollments(int studentId){
+
+
+    public void removeAllEnrollments(int studentId) {
         String sql = "DELETE FROM Student_Course WHERE studentId=?";
         jdbcTemplate.update(sql, studentId);
     }

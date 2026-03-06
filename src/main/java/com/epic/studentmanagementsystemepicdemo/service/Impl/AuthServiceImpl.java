@@ -16,14 +16,17 @@ public class AuthServiceImpl implements AuthService {
         this.userRepository = userRepository;
     }
 
+    @Override
     public User getUserByUsername(String username) {
         return userRepository.findByUsername(username);
     }
 
+    @Override
     public void registerUser(User user) {
         userRepository.saveUser(user);
     }
 
+    @Override
     public String login(User user) {
         if (user.getName() == null || user.getPassword() == null) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Username or password cannot be empty");

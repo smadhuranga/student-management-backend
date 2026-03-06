@@ -16,6 +16,11 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public class UserRepository implements UserRepo {
+    private final JdbcTemplate jdbcTemplate;
+
+    public UserRepository(JdbcTemplate jdbcTemplate) {
+        this.jdbcTemplate = jdbcTemplate;
+    }
 
     // row mapper for user table (its using for mapping the result set to user object)
     private final RowMapper<User> userRowMapper = (rs, rowNum) -> {
@@ -25,13 +30,10 @@ public class UserRepository implements UserRepo {
         u.setPassword(rs.getString("Password"));
         return u;
     };
-    private final JdbcTemplate jdbcTemplate;
 
-    public UserRepository(JdbcTemplate jdbcTemplate) {
-        this.jdbcTemplate = jdbcTemplate;
-    }
 
     // find user by username
+    @Override
     public User findByUsername(String username) {
         String sql = "select * from User where Name = ?";
         try {
@@ -42,6 +44,7 @@ public class UserRepository implements UserRepo {
     }
 
     // save user
+    @Override
     public int saveUser(User user) {
         String sql = "INSERT INTO User (Name, Password) VALUES (?, ?)";
         return jdbcTemplate.update(sql,
