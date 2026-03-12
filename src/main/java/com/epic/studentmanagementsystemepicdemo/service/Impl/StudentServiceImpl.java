@@ -36,7 +36,7 @@ public class StudentServiceImpl implements StudentService {
         student.setLastName(request.getLastName());
         student.setEmail(request.getEmail());
 
-        // ✅ now using LocalDate directly
+
         student.setDateOfBirth(request.getDateOfBirth());
         student.setEnrollmentDate(request.getEnrollmentDate());
 
@@ -70,7 +70,7 @@ public class StudentServiceImpl implements StudentService {
         student.setLastName(request.getLastName());
         student.setEmail(request.getEmail());
 
-        // ✅ LocalDate again
+
         student.setDateOfBirth(request.getDateOfBirth());
         student.setEnrollmentDate(request.getEnrollmentDate());
 

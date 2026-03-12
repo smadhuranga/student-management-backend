@@ -368,3 +368,602 @@ WHERE sc.studentId = ?
 2026-03-12T10:01:40.820+05:30  INFO 10332 --- [StudentManagementSystemEpicdemo] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
 2026-03-12T10:01:40.828+05:30  INFO 10332 --- [StudentManagementSystemEpicdemo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2026-03-12T10:01:40.833+05:30  INFO 10332 --- [StudentManagementSystemEpicdemo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-12T10:17:35.348+05:30  INFO 12652 --- [StudentManagementSystemEpicdemo] [restartedMain] udentManagementSystemEpicdemoApplication : Starting StudentManagementSystemEpicdemoApplication using Java 22.0.2 with PID 12652 (C:\Users\supun_m\Desktop\Epic\student-management-backend\target\classes started by supun_m in C:\Users\supun_m\Desktop\Epic\student-management-backend)
+2026-03-12T10:17:35.350+05:30  INFO 12652 --- [StudentManagementSystemEpicdemo] [restartedMain] udentManagementSystemEpicdemoApplication : No active profile set, falling back to 1 default profile: "default"
+2026-03-12T10:17:35.408+05:30  INFO 12652 --- [StudentManagementSystemEpicdemo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-12T10:17:35.408+05:30  INFO 12652 --- [StudentManagementSystemEpicdemo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-12T10:17:36.870+05:30  INFO 12652 --- [StudentManagementSystemEpicdemo] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-03-12T10:17:36.884+05:30  INFO 12652 --- [StudentManagementSystemEpicdemo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-12T10:17:36.884+05:30  INFO 12652 --- [StudentManagementSystemEpicdemo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-03-12T10:17:36.936+05:30  INFO 12652 --- [StudentManagementSystemEpicdemo] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1526 ms
+2026-03-12T10:17:37.288+05:30  WARN 12652 --- [StudentManagementSystemEpicdemo] [restartedMain] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 78ad1618-ed65-4284-9d12-f53719de3439
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-03-12T10:17:37.300+05:30  INFO 12652 --- [StudentManagementSystemEpicdemo] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-03-12T10:17:37.855+05:30  INFO 12652 --- [StudentManagementSystemEpicdemo] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
+2026-03-12T10:17:37.861+05:30  INFO 12652 --- [StudentManagementSystemEpicdemo] [restartedMain] udentManagementSystemEpicdemoApplication : Started StudentManagementSystemEpicdemoApplication in 3.104 seconds (process running for 4.066)
+2026-03-12T10:17:45.075+05:30  INFO 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-12T10:17:45.075+05:30  INFO 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-12T10:17:45.076+05:30  INFO 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-12T10:17:45.151+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Course]
+2026-03-12T10:17:45.155+05:30  INFO 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-12T10:17:45.740+05:30  INFO 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3311d41e
+2026-03-12T10:17:45.742+05:30  INFO 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-12T10:17:45.865+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Course]
+2026-03-12T10:17:45.871+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-12T10:17:45.889+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-12T10:17:45.923+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:17:45.923+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:17:45.923+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:17:45.923+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:17:45.923+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:17:45.924+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:17:45.923+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:17:45.924+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:17:45.925+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:17:45.925+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:17:45.925+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:17:45.924+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:17:45.961+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:17:45.961+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:17:45.962+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:17:45.962+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:17:45.971+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:17:45.971+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:17:45.975+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:17:45.977+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:17:45.980+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:17:45.980+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:17:45.980+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:17:45.980+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:17:45.993+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:17:45.995+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:17:45.999+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:17:46.000+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:18:12.151+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:18:12.152+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT COUNT(*) FROM Student WHERE email = ?]
+2026-03-12T10:18:12.157+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2026-03-12T10:18:12.158+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [    INSERT INTO Student
+    (firstName, lastName, email, dateOfBirth, enrollmentDate)
+    VALUES (?, ?, ?, ?, ?)
+]
+2026-03-12T10:18:12.164+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT LAST_INSERT_ID()]
+2026-03-12T10:18:12.168+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:18:12.168+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT COUNT(*)
+FROM Student_Course
+WHERE studentId=? AND courseId=?
+]
+2026-03-12T10:18:12.171+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2026-03-12T10:18:12.171+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [INSERT INTO Student_Course
+(studentId, courseId, enrollmentDate)
+VALUES (?, ?, CURDATE())
+]
+2026-03-12T10:18:14.216+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-12T10:18:14.248+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:18:14.249+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:18:14.246+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:18:14.249+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:18:14.250+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:18:14.251+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:18:14.251+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:18:14.250+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:18:14.266+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:18:14.267+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:18:14.270+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:18:14.270+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:18:14.270+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:18:14.270+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:18:14.270+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:18:14.270+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:20:11.651+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:20:11.652+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT COUNT(*) FROM Student WHERE email = ? AND id != ?]
+2026-03-12T10:20:11.653+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2026-03-12T10:20:11.654+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [UPDATE Student
+SET firstName=?,
+    lastName=?,
+    email=?,
+    dateOfBirth=?,
+    enrollmentDate=?
+WHERE Id=?
+]
+2026-03-12T10:20:11.659+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2026-03-12T10:20:11.660+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [DELETE FROM Student_Course WHERE studentId=?]
+2026-03-12T10:20:11.661+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:20:11.662+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT COUNT(*)
+FROM Student_Course
+WHERE studentId=? AND courseId=?
+]
+2026-03-12T10:20:11.663+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2026-03-12T10:20:11.663+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [INSERT INTO Student_Course
+(studentId, courseId, enrollmentDate)
+VALUES (?, ?, CURDATE())
+]
+2026-03-12T10:20:13.193+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-12T10:20:13.210+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:20:13.211+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:20:13.212+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:20:13.212+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:20:13.219+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:20:13.219+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:20:13.220+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:20:13.221+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:20:13.221+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:20:13.221+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:20:13.221+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:20:13.221+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:20:13.221+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:20:13.224+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:20:13.225+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:20:13.226+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:20:23.870+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:20:23.871+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT COUNT(*) FROM Student WHERE email = ? AND id != ?]
+2026-03-12T10:20:23.872+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2026-03-12T10:20:23.874+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [UPDATE Student
+SET firstName=?,
+    lastName=?,
+    email=?,
+    dateOfBirth=?,
+    enrollmentDate=?
+WHERE Id=?
+]
+2026-03-12T10:20:23.875+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2026-03-12T10:20:23.876+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [DELETE FROM Student_Course WHERE studentId=?]
+2026-03-12T10:20:23.877+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:20:23.877+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT COUNT(*)
+FROM Student_Course
+WHERE studentId=? AND courseId=?
+]
+2026-03-12T10:20:23.878+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2026-03-12T10:20:23.878+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [INSERT INTO Student_Course
+(studentId, courseId, enrollmentDate)
+VALUES (?, ?, CURDATE())
+]
+2026-03-12T10:20:23.880+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:20:23.881+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT COUNT(*)
+FROM Student_Course
+WHERE studentId=? AND courseId=?
+]
+2026-03-12T10:20:23.882+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2026-03-12T10:20:23.883+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [INSERT INTO Student_Course
+(studentId, courseId, enrollmentDate)
+VALUES (?, ?, CURDATE())
+]
+2026-03-12T10:20:25.912+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-12T10:20:25.942+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:20:25.942+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:20:25.943+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:20:25.942+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:20:25.946+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:20:25.947+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:20:25.947+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:20:25.949+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:20:25.950+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:20:25.950+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:20:25.951+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:20:25.952+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:20:25.964+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:20:25.964+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:20:25.965+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:20:25.965+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:20:51.590+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:20:51.590+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT COUNT(*) FROM Student WHERE email = ?]
+2026-03-12T10:20:51.592+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2026-03-12T10:20:51.592+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [    INSERT INTO Student
+    (firstName, lastName, email, dateOfBirth, enrollmentDate)
+    VALUES (?, ?, ?, ?, ?)
+]
+2026-03-12T10:20:51.594+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT LAST_INSERT_ID()]
+2026-03-12T10:20:51.596+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:20:51.596+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT COUNT(*)
+FROM Student_Course
+WHERE studentId=? AND courseId=?
+]
+2026-03-12T10:20:51.597+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2026-03-12T10:20:51.597+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [INSERT INTO Student_Course
+(studentId, courseId, enrollmentDate)
+VALUES (?, ?, CURDATE())
+]
+2026-03-12T10:20:53.632+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-12T10:20:53.685+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:20:53.685+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:20:53.687+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:20:53.687+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:20:53.690+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:20:53.691+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:20:53.696+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:20:53.697+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:20:53.697+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:20:53.698+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:20:53.698+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:20:53.700+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:20:53.711+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:20:53.712+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:20:53.712+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:20:53.713+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:20:53.711+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:20:53.714+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:21:04.695+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:21:04.695+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT COUNT(*) FROM Student WHERE email = ? AND id != ?]
+2026-03-12T10:21:04.697+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2026-03-12T10:21:04.697+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [UPDATE Student
+SET firstName=?,
+    lastName=?,
+    email=?,
+    dateOfBirth=?,
+    enrollmentDate=?
+WHERE Id=?
+]
+2026-03-12T10:21:04.698+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2026-03-12T10:21:04.699+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [DELETE FROM Student_Course WHERE studentId=?]
+2026-03-12T10:21:06.737+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-12T10:21:06.774+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:21:06.774+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:21:06.777+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:21:06.778+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:21:06.779+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:21:06.779+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:21:06.779+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:21:06.778+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:21:06.787+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:21:06.787+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:21:06.787+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:21:06.788+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:21:06.789+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:21:06.791+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:21:06.787+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:21:06.793+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:21:06.793+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:21:06.793+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-12T10:21:18.116+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-12T10:21:18.123+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-12T10:21:18.125+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Course]
+2026-03-12T10:21:18.131+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Course]
+2026-03-12T10:21:19.092+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Course]
+2026-03-12T10:21:19.101+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Course]
+2026-03-12T10:21:21.027+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-12T10:21:21.027+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:21:21.027+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT
+    s.Id AS studentId,
+    CONCAT(s.firstName, ' ', s.lastName) AS studentName,
+    s.email,
+    sc.enrollmentDate AS enrolledDate
+FROM Student_Course sc
+JOIN Student s ON s.Id = sc.studentId
+WHERE sc.courseId = ?
+ORDER BY sc.enrollmentDate DESC
+]
+2026-03-12T10:21:23.986+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:21:23.986+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT COUNT(*)
+FROM Student_Course
+WHERE studentId=? AND courseId=?
+]
+2026-03-12T10:21:23.987+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2026-03-12T10:21:23.988+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [INSERT INTO Student_Course
+(studentId, courseId, enrollmentDate)
+VALUES (?, ?, CURDATE())
+]
+2026-03-12T10:21:24.007+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-12T10:21:24.008+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:21:24.008+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT
+    s.Id AS studentId,
+    CONCAT(s.firstName, ' ', s.lastName) AS studentName,
+    s.email,
+    sc.enrollmentDate AS enrolledDate
+FROM Student_Course sc
+JOIN Student s ON s.Id = sc.studentId
+WHERE sc.courseId = ?
+ORDER BY sc.enrollmentDate DESC
+]
+2026-03-12T10:21:24.021+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Course]
+2026-03-12T10:21:54.725+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:21:54.725+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT COUNT(*)
+FROM Student_Course
+WHERE studentId=? AND courseId=?
+]
+2026-03-12T10:21:54.727+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2026-03-12T10:21:54.727+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [INSERT INTO Student_Course
+(studentId, courseId, enrollmentDate)
+VALUES (?, ?, CURDATE())
+]
+2026-03-12T10:21:54.747+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-12T10:21:54.747+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:21:54.748+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT
+    s.Id AS studentId,
+    CONCAT(s.firstName, ' ', s.lastName) AS studentName,
+    s.email,
+    sc.enrollmentDate AS enrolledDate
+FROM Student_Course sc
+JOIN Student s ON s.Id = sc.studentId
+WHERE sc.courseId = ?
+ORDER BY sc.enrollmentDate DESC
+]
+2026-03-12T10:21:54.763+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Course]
+2026-03-12T10:22:15.306+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:22:15.306+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT COUNT(*)
+FROM Student_Course
+WHERE studentId=? AND courseId=?
+]
+2026-03-12T10:22:15.308+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2026-03-12T10:22:15.309+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [INSERT INTO Student_Course
+(studentId, courseId, enrollmentDate)
+VALUES (?, ?, CURDATE())
+]
+2026-03-12T10:22:15.328+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-12T10:22:15.328+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:22:15.328+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT
+    s.Id AS studentId,
+    CONCAT(s.firstName, ' ', s.lastName) AS studentName,
+    s.email,
+    sc.enrollmentDate AS enrolledDate
+FROM Student_Course sc
+JOIN Student s ON s.Id = sc.studentId
+WHERE sc.courseId = ?
+ORDER BY sc.enrollmentDate DESC
+]
+2026-03-12T10:22:15.340+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Course]
+2026-03-12T10:22:28.161+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-12T10:22:28.161+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:22:28.162+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT
+    s.Id AS studentId,
+    CONCAT(s.firstName, ' ', s.lastName) AS studentName,
+    s.email,
+    sc.enrollmentDate AS enrolledDate
+FROM Student_Course sc
+JOIN Student s ON s.Id = sc.studentId
+WHERE sc.courseId = ?
+ORDER BY sc.enrollmentDate DESC
+]
+2026-03-12T10:22:39.842+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:22:39.842+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT COUNT(*)
+FROM Student_Course
+WHERE studentId=? AND courseId=?
+]
+2026-03-12T10:22:39.844+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2026-03-12T10:22:39.845+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [INSERT INTO Student_Course
+(studentId, courseId, enrollmentDate)
+VALUES (?, ?, CURDATE())
+]
+2026-03-12T10:22:39.863+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-12T10:22:39.863+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-12T10:22:39.863+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT
+    s.Id AS studentId,
+    CONCAT(s.firstName, ' ', s.lastName) AS studentName,
+    s.email,
+    sc.enrollmentDate AS enrolledDate
+FROM Student_Course sc
+JOIN Student s ON s.Id = sc.studentId
+WHERE sc.courseId = ?
+ORDER BY sc.enrollmentDate DESC
+]
+2026-03-12T10:22:39.877+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Course]
+2026-03-12T10:22:53.823+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-12T10:22:53.830+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-12T10:22:53.832+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Course]
+2026-03-12T10:22:53.838+05:30 DEBUG 12652 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Course]
