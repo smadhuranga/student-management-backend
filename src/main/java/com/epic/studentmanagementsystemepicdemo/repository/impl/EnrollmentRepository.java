@@ -18,13 +18,14 @@ public class EnrollmentRepository implements EnrollmentRepo {
         this.jdbcTemplate = jdbcTemplate;
     }
 
+
     @Override
     public void enrollStudent(int studentId, int courseId) {
         String sql = """
-                INSERT INTO Student_Course
-                (studentId, courseId, enrollmentDate)
-                VALUES (?, ?, NOW())
-                """;
+            INSERT INTO Student_Course
+            (studentId, courseId, enrollmentDate)
+            VALUES (?, ?, CURDATE())
+            """;
         jdbcTemplate.update(sql, studentId, courseId);
     }
 
@@ -71,8 +72,8 @@ public class EnrollmentRepository implements EnrollmentRepo {
             s.setFirstName(rs.getString("firstName"));
             s.setLastName(rs.getString("lastName"));
             s.setEmail(rs.getString("email"));
-            s.setDateOfBirth(rs.getDate("dateOfBirth"));
-            s.setEnrollmentDate(rs.getDate("enrollmentDate"));
+            s.setDateOfBirth(rs.getObject("dateOfBirth", java.time.LocalDate.class));
+            s.setEnrollmentDate(rs.getObject("enrollmentDate", java.time.LocalDate.class));
             return s;
         }, courseId);
     }

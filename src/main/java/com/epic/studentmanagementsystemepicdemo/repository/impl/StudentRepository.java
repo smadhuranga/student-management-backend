@@ -25,9 +25,8 @@ public class StudentRepository implements StudentRepo {
         s.setFirstName(rs.getString("firstName"));
         s.setLastName(rs.getString("lastName"));
         s.setEmail(rs.getString("email"));
-        s.setDateOfBirth(rs.getDate("dateOfBirth"));
-        s.setEnrollmentDate(rs.getDate("enrollmentDate"));
-
+        s.setDateOfBirth(rs.getObject("dateOfBirth", java.time.LocalDate.class));
+        s.setEnrollmentDate(rs.getObject("enrollmentDate", java.time.LocalDate.class));
         return s;
     };
 
@@ -41,10 +40,10 @@ public class StudentRepository implements StudentRepo {
     @Override
     public int saveStudent(Student s) {
         String sql = """
-                    INSERT INTO Student
-                    (firstName, lastName, email, dateOfBirth, enrollmentDate)
-                    VALUES (?, ?, ?, ?, ?)
-                """;
+        INSERT INTO Student
+        (firstName, lastName, email, dateOfBirth, enrollmentDate)
+        VALUES (?, ?, ?, ?, ?)
+    """;
 
         jdbcTemplate.update(sql,
                 s.getFirstName(),
@@ -54,10 +53,7 @@ public class StudentRepository implements StudentRepo {
                 s.getEnrollmentDate()
         );
 
-
-        Integer id = jdbcTemplate.queryForObject(
-                "SELECT LAST_INSERT_ID()", Integer.class);
-
+        Integer id = jdbcTemplate.queryForObject("SELECT LAST_INSERT_ID()", Integer.class);
         return id;
     }
 
@@ -82,14 +78,14 @@ public class StudentRepository implements StudentRepo {
     @Override
     public int update(Student s) {
         String sql = """
-                UPDATE Student
-                SET firstName=?,
-                    lastName=?,
-                    email=?,
-                    dateOfBirth=?,
-                    enrollmentDate=?
-                WHERE Id=?
-                """;
+            UPDATE Student
+            SET firstName=?,
+                lastName=?,
+                email=?,
+                dateOfBirth=?,
+                enrollmentDate=?
+            WHERE Id=?
+            """;
 
         int rows = jdbcTemplate.update(sql,
                 s.getFirstName(),
@@ -99,6 +95,7 @@ public class StudentRepository implements StudentRepo {
                 s.getEnrollmentDate(),
                 s.getId()
         );
+
         if (rows == 0) {
             throw new ResourceNotFoundException("Student not found");
         }

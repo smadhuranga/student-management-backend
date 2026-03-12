@@ -2,7 +2,8 @@ package com.epic.studentmanagementsystemepicdemo.model;
 
 import lombok.Data;
 
-import java.util.Date;
+import java.time.LocalDate;
+
 
 @Data
 public class StudentCourse {
@@ -10,6 +11,6 @@ public class StudentCourse {
     private Integer id;
     private Integer studentId;
     private Integer courseId;
-    private Date enrollmentDate;
+    private LocalDate enrollmentDate;
 
 }

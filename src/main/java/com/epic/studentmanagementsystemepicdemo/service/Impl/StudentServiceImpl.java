@@ -1,6 +1,5 @@
 package com.epic.studentmanagementsystemepicdemo.service.Impl;
 
-
 import com.epic.studentmanagementsystemepicdemo.dto.StudentRequestDTO;
 import com.epic.studentmanagementsystemepicdemo.exception.DuplicateEmailException;
 import com.epic.studentmanagementsystemepicdemo.model.Student;
@@ -10,9 +9,6 @@ import com.epic.studentmanagementsystemepicdemo.service.StudentService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.time.LocalDate;
-import java.time.ZoneId;
-import java.util.Date;
 import java.util.List;
 
 @Service
@@ -21,19 +17,16 @@ public class StudentServiceImpl implements StudentService {
     private final StudentRepo studentRepository;
     private final EnrollmentRepo enrollmentRepo;
 
-    public StudentServiceImpl(StudentRepo studentRepository, EnrollmentRepo enrollmentRepo) {
+    public StudentServiceImpl(StudentRepo studentRepository,
+                              EnrollmentRepo enrollmentRepo) {
         this.studentRepository = studentRepository;
         this.enrollmentRepo = enrollmentRepo;
-    }
-
-    private Date toDate(LocalDate localDate) {
-        if (localDate == null) return null;
-        return Date.from(localDate.atStartOfDay(ZoneId.systemDefault()).toInstant());
     }
 
     @Override
     @Transactional
     public void createStudent(StudentRequestDTO request) {
+
         if (studentRepository.existsByEmail(request.getEmail())) {
             throw new DuplicateEmailException("Email already exists");
         }
@@ -42,13 +35,16 @@ public class StudentServiceImpl implements StudentService {
         student.setFirstName(request.getFirstName());
         student.setLastName(request.getLastName());
         student.setEmail(request.getEmail());
-        student.setDateOfBirth(toDate(request.getDateOfBirth()));
-        student.setEnrollmentDate(toDate(request.getEnrollmentDate()));
+
+        // ✅ now using LocalDate directly
+        student.setDateOfBirth(request.getDateOfBirth());
+        student.setEnrollmentDate(request.getEnrollmentDate());
 
         int studentId = studentRepository.saveStudent(student);
 
         if (request.getCourseIds() != null) {
             for (Integer courseId : request.getCourseIds()) {
+
                 if (courseId == null) continue;
 
                 if (!enrollmentRepo.existsEnrollment(studentId, courseId)) {
@@ -61,6 +57,7 @@ public class StudentServiceImpl implements StudentService {
     @Override
     @Transactional
     public void updateStudent(Integer id, StudentRequestDTO request) {
+
         if (studentRepository.existsByEmailAndIdNot(request.getEmail(), id)) {
             throw new DuplicateEmailException(
                     "Email " + request.getEmail() + " is already in use by another student."
@@ -72,17 +69,25 @@ public class StudentServiceImpl implements StudentService {
         student.setFirstName(request.getFirstName());
         student.setLastName(request.getLastName());
         student.setEmail(request.getEmail());
-        student.setDateOfBirth(toDate(request.getDateOfBirth()));
-        student.setEnrollmentDate(toDate(request.getEnrollmentDate()));
+
+        // ✅ LocalDate again
+        student.setDateOfBirth(request.getDateOfBirth());
+        student.setEnrollmentDate(request.getEnrollmentDate());
 
         studentRepository.update(student);
 
+        // remove previous enrollments
         enrollmentRepo.removeEnrollmentsByStudent(id);
 
+        // re-add selected courses
         if (request.getCourseIds() != null) {
             for (Integer courseId : request.getCourseIds()) {
+
                 if (courseId == null) continue;
-                enrollmentRepo.enrollStudent(id, courseId);
+
+                if (!enrollmentRepo.existsEnrollment(id, courseId)) {
+                    enrollmentRepo.enrollStudent(id, courseId);
+                }
             }
         }
     }
@@ -100,7 +105,11 @@ public class StudentServiceImpl implements StudentService {
     @Override
     @Transactional
     public void deleteStudentById(int studentId) {
+
+        // remove enrollments first
         enrollmentRepo.removeEnrollmentsByStudent(studentId);
+
+        // delete student
         studentRepository.delete(studentId);
     }
 }
