@@ -63,7 +63,7 @@ public class StudentRepository implements StudentRepo {
 
     @Override
     public List<Student> getAllStudents(String sortBy, String sortOrder) {
-        // Map frontend sort keys to actual database column names
+
         Map<String, String> columnMap = new HashMap<>();
         columnMap.put("id", "Id");
         columnMap.put("name", null); // special handling
@@ -71,7 +71,7 @@ public class StudentRepository implements StudentRepo {
         columnMap.put("dateOfBirth", "dateOfBirth");
         columnMap.put("enrollmentDate", "enrollmentDate");
 
-        // Whitelist to prevent SQL injection
+
         List<String> allowedColumns = Arrays.asList("Id", "email", "dateOfBirth", "enrollmentDate");
 
         String dbColumn = columnMap.get(sortBy);
@@ -79,7 +79,7 @@ public class StudentRepository implements StudentRepo {
         String sql = "SELECT * FROM Student";
 
         if ("name".equals(sortBy)) {
-            // Sort by first name and last name
+
             sql += " ORDER BY firstName " + order + ", lastName " + order;
         } else {
             if (dbColumn == null || !allowedColumns.contains(dbColumn)) {

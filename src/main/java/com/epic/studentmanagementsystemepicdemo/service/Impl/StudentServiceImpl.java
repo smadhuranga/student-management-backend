@@ -76,10 +76,10 @@ public class StudentServiceImpl implements StudentService {
 
         studentRepository.update(student);
 
-        // remove previous enrollments
+
         enrollmentRepo.removeEnrollmentsByStudent(id);
 
-        // re-add selected courses
+
         if (request.getCourseIds() != null) {
             for (Integer courseId : request.getCourseIds()) {
 
@@ -107,10 +107,10 @@ public class StudentServiceImpl implements StudentService {
     @Transactional
     public void deleteStudentById(int studentId) {
 
-        // remove enrollments first
+
         enrollmentRepo.removeEnrollmentsByStudent(studentId);
 
-        // delete student
+
         studentRepository.delete(studentId);
     }
 
