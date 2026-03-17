@@ -37,8 +37,10 @@ public class StudentController {
 
     // get all students
     @GetMapping
-    public List<Student> getAllStudents() {
-        return studentService.findAllStudents();
+    public List<Student> getAllStudents(
+            @RequestParam(defaultValue = "id") String sortBy,
+            @RequestParam(defaultValue = "desc") String sortOrder) {
+        return studentService.findAllStudents(sortBy, sortOrder);
     }
 
     // get student by id

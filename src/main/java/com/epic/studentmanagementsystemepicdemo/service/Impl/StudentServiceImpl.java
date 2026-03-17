@@ -99,8 +99,9 @@ public class StudentServiceImpl implements StudentService {
 
     @Override
     public List<Student> findAllStudents() {
-        return studentRepository.getAllStudents();
+        return List.of();
     }
+
 
     @Override
     @Transactional
@@ -111,5 +112,10 @@ public class StudentServiceImpl implements StudentService {
 
         // delete student
         studentRepository.delete(studentId);
+    }
+
+    @Override
+    public List<Student> findAllStudents(String sortBy, String sortOrder) {
+        return studentRepository.getAllStudents(sortBy, sortOrder);
     }
 }

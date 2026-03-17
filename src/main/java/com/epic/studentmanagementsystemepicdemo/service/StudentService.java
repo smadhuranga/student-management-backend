@@ -19,5 +19,6 @@ public interface StudentService {
     void updateStudent(Integer id, StudentRequestDTO request);
     Student findStudentById(int studentId);
     List<Student> findAllStudents();
+    List<Student> findAllStudents(String sortBy, String sortOrder); // new
     void deleteStudentById(int studentId);
 }

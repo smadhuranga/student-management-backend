@@ -14,11 +14,15 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Repository
 public class StudentRepository implements StudentRepo {
     private final JdbcTemplate jdbcTemplate;
+
     public RowMapper<Student> studentRowMapper = (rs, rowNum) -> {
         Student s = new Student();
         s.setId(rs.getInt("id"));
@@ -30,21 +34,16 @@ public class StudentRepository implements StudentRepo {
         return s;
     };
 
-    // row mapper for student table (its using for mapping the result set to student object)
-
     public StudentRepository(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }
 
-    // save student
     @Override
     public int saveStudent(Student s) {
         String sql = """
-        INSERT INTO Student
-        (firstName, lastName, email, dateOfBirth, enrollmentDate)
-        VALUES (?, ?, ?, ?, ?)
-    """;
-
+            INSERT INTO Student (firstName, lastName, email, dateOfBirth, enrollmentDate)
+            VALUES (?, ?, ?, ?, ?)
+        """;
         jdbcTemplate.update(sql,
                 s.getFirstName(),
                 s.getLastName(),
@@ -52,21 +51,49 @@ public class StudentRepository implements StudentRepo {
                 s.getDateOfBirth(),
                 s.getEnrollmentDate()
         );
-
         Integer id = jdbcTemplate.queryForObject("SELECT LAST_INSERT_ID()", Integer.class);
         return id;
     }
 
-    // get all students
     @Override
     public List<Student> getAllStudents() {
         String sql = "SELECT * FROM Student ORDER BY Id DESC";
         return jdbcTemplate.query(sql, studentRowMapper);
     }
 
-    public Student findById(int id) {
-        String sql = "SELECT * FROM Student WHERE Id = ?";
+    @Override
+    public List<Student> getAllStudents(String sortBy, String sortOrder) {
+        // Map frontend sort keys to actual database column names
+        Map<String, String> columnMap = new HashMap<>();
+        columnMap.put("id", "Id");
+        columnMap.put("name", null); // special handling
+        columnMap.put("email", "email");
+        columnMap.put("dateOfBirth", "dateOfBirth");
+        columnMap.put("enrollmentDate", "enrollmentDate");
 
+        // Whitelist to prevent SQL injection
+        List<String> allowedColumns = Arrays.asList("Id", "email", "dateOfBirth", "enrollmentDate");
+
+        String dbColumn = columnMap.get(sortBy);
+        String order = sortOrder.equalsIgnoreCase("asc") ? "ASC" : "DESC";
+        String sql = "SELECT * FROM Student";
+
+        if ("name".equals(sortBy)) {
+            // Sort by first name and last name
+            sql += " ORDER BY firstName " + order + ", lastName " + order;
+        } else {
+            if (dbColumn == null || !allowedColumns.contains(dbColumn)) {
+                dbColumn = "Id"; // default fallback
+            }
+            sql += " ORDER BY " + dbColumn + " " + order;
+        }
+
+        return jdbcTemplate.query(sql, studentRowMapper);
+    }
+
+    @Override
+    public Student findById(int id) {
+        String sql = "SELECT * FROM Student WHERE id = ?";
         try {
             return jdbcTemplate.queryForObject(sql, studentRowMapper, id);
         } catch (EmptyResultDataAccessException e) {
@@ -74,19 +101,13 @@ public class StudentRepository implements StudentRepo {
         }
     }
 
-    // update student by id
     @Override
     public int update(Student s) {
         String sql = """
             UPDATE Student
-            SET firstName=?,
-                lastName=?,
-                email=?,
-                dateOfBirth=?,
-                enrollmentDate=?
-            WHERE Id=?
-            """;
-
+            SET firstName=?, lastName=?, email=?, dateOfBirth=?, enrollmentDate=?
+            WHERE id=?
+        """;
         int rows = jdbcTemplate.update(sql,
                 s.getFirstName(),
                 s.getLastName(),
@@ -95,24 +116,20 @@ public class StudentRepository implements StudentRepo {
                 s.getEnrollmentDate(),
                 s.getId()
         );
-
         if (rows == 0) {
             throw new ResourceNotFoundException("Student not found");
         }
         return rows;
     }
 
-    // delete student by id
     @Override
     public int delete(int id) {
-        String sql = "DELETE FROM Student WHERE Id=?";
+        String sql = "DELETE FROM Student WHERE id=?";
         int rows = jdbcTemplate.update(sql, id);
-
         if (rows == 0) {
             throw new ResourceNotFoundException("Student not found");
         }
         return rows;
-
     }
 
     @Override
@@ -127,11 +144,5 @@ public class StudentRepository implements StudentRepo {
         String sql = "SELECT COUNT(*) FROM Student WHERE email = ? AND id != ?";
         Integer count = jdbcTemplate.queryForObject(sql, Integer.class, email, id);
         return count != null && count > 0;
-    }
-
-
-    public void removeAllEnrollments(int studentId) {
-        String sql = "DELETE FROM Student_Course WHERE studentId=?";
-        jdbcTemplate.update(sql, studentId);
     }
 }

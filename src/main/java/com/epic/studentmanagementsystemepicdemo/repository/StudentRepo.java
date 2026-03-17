@@ -13,16 +13,11 @@ import java.util.List;
 
 public interface StudentRepo {
     int saveStudent(Student s);
-
     List<Student> getAllStudents();
-
+    List<Student> getAllStudents(String sortBy, String sortOrder); // new method
     Student findById(int id);
-
     int update(Student s);
-
     int delete(int id);
-
     boolean existsByEmail(String email);
-
     boolean existsByEmailAndIdNot(String email, int id);
 }
