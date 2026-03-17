@@ -10,10 +10,14 @@ public interface CourseRepo {
 
     List<Course> getAllCourses();
 
+    List<Course> getAllCourses(String sortBy, String sortOrder);
+
     Course findById(int id);
 
     int updateCourse(Course course);
 
     int deleteCourse(int id);
+
+
 
 }

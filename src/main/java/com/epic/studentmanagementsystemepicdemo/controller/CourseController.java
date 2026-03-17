@@ -1,7 +1,6 @@
 package com.epic.studentmanagementsystemepicdemo.controller;
 
 import com.epic.studentmanagementsystemepicdemo.model.Course;
-import com.epic.studentmanagementsystemepicdemo.repository.CourseRepo;
 import com.epic.studentmanagementsystemepicdemo.service.CourseService;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,14 +18,16 @@ public class CourseController {
     }
 
     @PostMapping
-    public String createCouser(@RequestBody Course course) {
+    public String createCourse(@RequestBody Course course) {
         courseService.createCourse(course);
         return "Course created successfully";
     }
 
     @GetMapping
-    public List<Course> getAllCourses() {
-        return courseService.getAllCourses();
+    public List<Course> getAllCourses(
+            @RequestParam(defaultValue = "id") String sortBy,
+            @RequestParam(defaultValue = "desc") String sortOrder) {
+        return courseService.getAllCourses(sortBy, sortOrder);
     }
 
     @GetMapping("/{id}")
@@ -45,6 +46,4 @@ public class CourseController {
         courseService.deleteCourse(id);
         return "Course deleted successfully";
     }
-
-
 }

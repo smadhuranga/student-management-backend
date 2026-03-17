@@ -27,6 +27,11 @@ public class CourseServiceImpl implements CourseService {
     }
 
     @Override
+    public List<Course> getAllCourses(String sortBy, String sortOrder) {
+        return courseRepo.getAllCourses(sortBy, sortOrder);
+    }
+
+    @Override
     public Course getCourseById(int id) {
         return courseRepo.findById(id);
     }

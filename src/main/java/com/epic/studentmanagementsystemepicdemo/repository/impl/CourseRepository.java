@@ -1,27 +1,17 @@
 package com.epic.studentmanagementsystemepicdemo.repository.impl;
 
-import com.epic.studentmanagementsystemepicdemo.exception.ResourceNotFoundException;
 import com.epic.studentmanagementsystemepicdemo.model.Course;
 import com.epic.studentmanagementsystemepicdemo.repository.CourseRepo;
-import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Set;
 
 @Repository
 public class CourseRepository implements CourseRepo {
 
     private final JdbcTemplate jdbcTemplate;
-    RowMapper<Course> courseRowMapper = (rs, rowNum) -> {
-        Course c = new Course();
-        c.setId(rs.getInt("Id"));
-        c.setCourseName(rs.getString("courseName"));
-        c.setCourseCode(rs.getString("courseCode"));
-        c.setDescription(rs.getString("description"));
-        return c;
-    };
 
     public CourseRepository(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
@@ -29,73 +19,106 @@ public class CourseRepository implements CourseRepo {
 
     @Override
     public int saveCourse(Course course) {
-
-        String sql = """
-                INSERT INTO Course
-                (courseName, courseCode, description)
-                VALUES (?, ?, ?)
-                """;
-
-        return jdbcTemplate.update(sql,
+        String sql = "INSERT INTO Course (courseName, courseCode, description) VALUES (?, ?, ?)";
+        return jdbcTemplate.update(
+                sql,
                 course.getCourseName(),
                 course.getCourseCode(),
-                course.getDescription());
+                course.getDescription()
+        );
     }
 
     @Override
     public List<Course> getAllCourses() {
+        return getAllCourses("id", "desc");
+    }
 
-        String sql = "SELECT * FROM Course";
+    @Override
+    public List<Course> getAllCourses(String sortBy, String sortOrder) {
+        Set<String> allowedSortColumns = Set.of("id", "courseName", "courseCode", "description");
+        if (sortBy == null || !allowedSortColumns.contains(sortBy)) {
+            sortBy = "id";
+        }
 
-        return jdbcTemplate.query(sql, courseRowMapper);
+        if (sortOrder == null ||
+                (!sortOrder.equalsIgnoreCase("asc") && !sortOrder.equalsIgnoreCase("desc"))) {
+            sortOrder = "desc";
+        }
+
+        String dbSortColumn;
+        switch (sortBy) {
+            case "courseName":
+                dbSortColumn = "c.courseName";
+                break;
+            case "courseCode":
+                dbSortColumn = "c.courseCode";
+                break;
+            case "description":
+                dbSortColumn = "c.description";
+                break;
+            case "id":
+            default:
+                dbSortColumn = "c.Id";
+                break;
+        }
+
+        String sql =
+                "SELECT c.Id, c.courseName, c.courseCode, c.description, " +
+                        "       COUNT(sc.studentId) AS studentCount " +
+                        "FROM Course c " +
+                        "LEFT JOIN Student_Course sc ON c.Id = sc.courseId " +
+                        "GROUP BY c.Id, c.courseName, c.courseCode, c.description " +
+                        "ORDER BY " + dbSortColumn + " " + sortOrder;
+
+        return jdbcTemplate.query(sql, (rs, rowNum) -> {
+            Course course = new Course();
+            course.setId(rs.getInt("Id"));
+            course.setCourseName(rs.getString("courseName"));
+            course.setCourseCode(rs.getString("courseCode"));
+            course.setDescription(rs.getString("description"));
+            course.setStudentCount(rs.getInt("studentCount"));
+            return course;
+        });
     }
 
     @Override
     public Course findById(int id) {
+        String sql =
+                "SELECT c.Id, c.courseName, c.courseCode, c.description, " +
+                        "       COUNT(sc.studentId) AS studentCount " +
+                        "FROM Course c " +
+                        "LEFT JOIN Student_Course sc ON c.Id = sc.courseId " +
+                        "WHERE c.Id = ? " +
+                        "GROUP BY c.Id, c.courseName, c.courseCode, c.description";
 
-        String sql = "SELECT * FROM Course WHERE Id=?";
+        List<Course> courses = jdbcTemplate.query(sql, new Object[]{id}, (rs, rowNum) -> {
+            Course course = new Course();
+            course.setId(rs.getInt("Id"));
+            course.setCourseName(rs.getString("courseName"));
+            course.setCourseCode(rs.getString("courseCode"));
+            course.setDescription(rs.getString("description"));
+            course.setStudentCount(rs.getInt("studentCount"));
+            return course;
+        });
 
-        try {
-            return jdbcTemplate.queryForObject(sql, courseRowMapper, id);
-        } catch (EmptyResultDataAccessException e) {
-            throw new ResourceNotFoundException("Course not found");
-        }
+        return courses.isEmpty() ? null : courses.get(0);
     }
 
     @Override
     public int updateCourse(Course course) {
-
-        String sql = """
-                UPDATE Course
-                SET courseName=?, courseCode=?, description=?
-                WHERE Id=?
-                """;
-
-        int rows = jdbcTemplate.update(sql,
+        String sql = "UPDATE Course SET courseName = ?, courseCode = ?, description = ? WHERE Id = ?";
+        return jdbcTemplate.update(
+                sql,
                 course.getCourseName(),
                 course.getCourseCode(),
                 course.getDescription(),
-                course.getId());
-
-        if (rows == 0) {
-            throw new ResourceNotFoundException("Course not found");
-        }
-
-        return rows;
+                course.getId()
+        );
     }
 
     @Override
     public int deleteCourse(int id) {
-
-        String sql = "DELETE FROM Course WHERE Id=?";
-
-        int rows = jdbcTemplate.update(sql, id);
-
-        if (rows == 0) {
-            throw new ResourceNotFoundException("Course not found");
-        }
-
-        return rows;
+        jdbcTemplate.update("DELETE FROM Student_Course WHERE courseId = ?", id);
+        return jdbcTemplate.update("DELETE FROM Course WHERE Id = ?", id);
     }
-
 }

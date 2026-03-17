@@ -344,3 +344,1213 @@ This generated password is for development use only. Your security configuration
 2026-03-17T09:06:52.557+05:30  INFO 8816 --- [StudentManagementSystemEpicdemo] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
 2026-03-17T09:06:52.557+05:30  INFO 8816 --- [StudentManagementSystemEpicdemo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2026-03-17T09:06:52.574+05:30  INFO 8816 --- [StudentManagementSystemEpicdemo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-17T09:09:53.509+05:30  INFO 13304 --- [StudentManagementSystemEpicdemo] [restartedMain] udentManagementSystemEpicdemoApplication : Starting StudentManagementSystemEpicdemoApplication using Java 22.0.2 with PID 13304 (C:\Users\supun_m\Desktop\Epic\student-management-backend\target\classes started by supun_m in C:\Users\supun_m\Desktop\Epic\student-management-backend)
+2026-03-17T09:09:53.513+05:30  INFO 13304 --- [StudentManagementSystemEpicdemo] [restartedMain] udentManagementSystemEpicdemoApplication : No active profile set, falling back to 1 default profile: "default"
+2026-03-17T09:09:53.563+05:30  INFO 13304 --- [StudentManagementSystemEpicdemo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-17T09:09:53.563+05:30  INFO 13304 --- [StudentManagementSystemEpicdemo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-17T09:09:54.593+05:30  INFO 13304 --- [StudentManagementSystemEpicdemo] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-03-17T09:09:54.606+05:30  INFO 13304 --- [StudentManagementSystemEpicdemo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-17T09:09:54.606+05:30  INFO 13304 --- [StudentManagementSystemEpicdemo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-03-17T09:09:54.643+05:30  INFO 13304 --- [StudentManagementSystemEpicdemo] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1079 ms
+2026-03-17T09:09:54.905+05:30  WARN 13304 --- [StudentManagementSystemEpicdemo] [restartedMain] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: af405b17-4422-4c59-a21e-c60e037bd46e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-03-17T09:09:54.912+05:30  INFO 13304 --- [StudentManagementSystemEpicdemo] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-03-17T09:09:55.350+05:30  INFO 13304 --- [StudentManagementSystemEpicdemo] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
+2026-03-17T09:09:55.356+05:30  INFO 13304 --- [StudentManagementSystemEpicdemo] [restartedMain] udentManagementSystemEpicdemoApplication : Started StudentManagementSystemEpicdemoApplication in 2.374 seconds (process running for 3.309)
+2026-03-17T09:09:59.446+05:30  INFO 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-17T09:09:59.447+05:30  INFO 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-17T09:09:59.448+05:30  INFO 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-17T09:09:59.530+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Course]
+2026-03-17T09:09:59.533+05:30  INFO 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-17T09:09:59.533+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-17T09:09:59.957+05:30  INFO 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@26a7fc1f
+2026-03-17T09:09:59.959+05:30  INFO 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-17T09:10:00.092+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-17T09:10:00.092+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Course]
+2026-03-17T09:10:00.113+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:00.113+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:00.113+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:00.113+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:00.113+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:00.113+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:00.114+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:00.115+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:00.114+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:00.114+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:00.114+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:00.115+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:00.139+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:00.139+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:00.139+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:00.139+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:00.139+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:00.139+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:00.139+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:00.139+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:00.139+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:00.139+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:00.139+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:00.151+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:00.164+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:00.164+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:00.170+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:00.172+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:00.172+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:00.171+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:00.182+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:00.183+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:00.184+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:00.185+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:00.186+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:00.187+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:00.197+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:00.198+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:00.207+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:00.207+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:00.208+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:00.208+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:00.212+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:00.215+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:00.217+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:00.216+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:00.220+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:00.221+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:01.092+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Course]
+2026-03-17T09:10:01.092+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-17T09:10:01.107+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Course]
+2026-03-17T09:10:01.111+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-17T09:10:01.136+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:01.136+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:01.137+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:01.137+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:01.137+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:01.138+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:01.143+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:01.144+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:01.138+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:01.149+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:01.149+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:01.153+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:01.154+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:01.154+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:01.155+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:01.156+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:01.157+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:01.165+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:01.165+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:01.146+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:01.168+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:01.169+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:01.171+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:01.172+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:01.174+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:01.175+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:01.176+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:01.177+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:01.170+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:01.178+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:01.182+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:01.183+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:01.188+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:01.189+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:01.201+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:01.202+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:01.202+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:01.203+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:01.207+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:01.209+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:01.209+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:01.211+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:01.202+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:01.213+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:01.214+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:01.199+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:01.214+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:01.220+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:31.767+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:31.767+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT COUNT(*) FROM Student WHERE email = ?]
+2026-03-17T09:10:31.770+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2026-03-17T09:10:31.770+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [    INSERT INTO Student (firstName, lastName, email, dateOfBirth, enrollmentDate)
+    VALUES (?, ?, ?, ?, ?)
+]
+2026-03-17T09:10:31.770+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT LAST_INSERT_ID()]
+2026-03-17T09:10:31.770+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:31.770+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT COUNT(*)
+FROM Student_Course
+WHERE studentId=? AND courseId=?
+]
+2026-03-17T09:10:31.784+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2026-03-17T09:10:31.785+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [INSERT INTO Student_Course
+(studentId, courseId, enrollmentDate)
+VALUES (?, ?, CURDATE())
+]
+2026-03-17T09:10:31.786+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:31.786+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT COUNT(*)
+FROM Student_Course
+WHERE studentId=? AND courseId=?
+]
+2026-03-17T09:10:31.786+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2026-03-17T09:10:31.786+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [INSERT INTO Student_Course
+(studentId, courseId, enrollmentDate)
+VALUES (?, ?, CURDATE())
+]
+2026-03-17T09:10:31.786+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:31.786+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT COUNT(*)
+FROM Student_Course
+WHERE studentId=? AND courseId=?
+]
+2026-03-17T09:10:31.786+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2026-03-17T09:10:31.786+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [INSERT INTO Student_Course
+(studentId, courseId, enrollmentDate)
+VALUES (?, ?, CURDATE())
+]
+2026-03-17T09:10:33.819+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-17T09:10:33.839+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:33.839+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:33.840+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:33.840+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:33.843+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:33.844+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:33.844+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:33.844+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:33.843+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:33.845+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:33.851+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:33.851+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:33.845+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:33.856+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:33.857+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:33.856+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:33.857+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:33.857+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:33.858+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:33.858+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:33.862+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:33.862+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:33.863+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:33.863+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:33.867+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:33.867+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:42.918+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:42.919+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT COUNT(*) FROM Student WHERE email = ? AND id != ?]
+2026-03-17T09:10:42.920+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2026-03-17T09:10:42.921+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [    UPDATE Student
+    SET firstName=?, lastName=?, email=?, dateOfBirth=?, enrollmentDate=?
+    WHERE id=?
+]
+2026-03-17T09:10:42.922+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2026-03-17T09:10:42.923+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [DELETE FROM Student_Course WHERE studentId=?]
+2026-03-17T09:10:42.925+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:42.925+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT COUNT(*)
+FROM Student_Course
+WHERE studentId=? AND courseId=?
+]
+2026-03-17T09:10:42.925+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2026-03-17T09:10:42.925+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [INSERT INTO Student_Course
+(studentId, courseId, enrollmentDate)
+VALUES (?, ?, CURDATE())
+]
+2026-03-17T09:10:42.925+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:42.925+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT COUNT(*)
+FROM Student_Course
+WHERE studentId=? AND courseId=?
+]
+2026-03-17T09:10:42.925+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2026-03-17T09:10:42.925+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [INSERT INTO Student_Course
+(studentId, courseId, enrollmentDate)
+VALUES (?, ?, CURDATE())
+]
+2026-03-17T09:10:42.925+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:42.925+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT COUNT(*)
+FROM Student_Course
+WHERE studentId=? AND courseId=?
+]
+2026-03-17T09:10:42.935+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2026-03-17T09:10:42.935+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [INSERT INTO Student_Course
+(studentId, courseId, enrollmentDate)
+VALUES (?, ?, CURDATE())
+]
+2026-03-17T09:10:42.937+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:42.937+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT COUNT(*)
+FROM Student_Course
+WHERE studentId=? AND courseId=?
+]
+2026-03-17T09:10:42.937+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2026-03-17T09:10:42.937+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [INSERT INTO Student_Course
+(studentId, courseId, enrollmentDate)
+VALUES (?, ?, CURDATE())
+]
+2026-03-17T09:10:44.968+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-17T09:10:44.987+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:44.987+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:44.987+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:44.988+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:44.988+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:44.988+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:44.989+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:44.990+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:44.987+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:44.993+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:44.993+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:44.992+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:44.997+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:44.997+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:44.997+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:44.997+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:44.997+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:44.997+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:45.001+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:45.006+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:45.007+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:10:45.007+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:45.007+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:45.007+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:45.007+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:10:45.007+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:29:09.505+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Course]
+2026-03-17T09:29:09.509+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-17T09:29:09.519+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-17T09:29:09.520+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Course]
+2026-03-17T09:29:09.543+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:29:09.543+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:29:09.543+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:29:09.543+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:29:09.558+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:29:09.558+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:29:09.558+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:29:09.558+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:29:09.558+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:29:09.563+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:29:09.563+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:29:09.563+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:29:09.572+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:29:09.572+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:29:09.591+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:29:09.592+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:29:09.593+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:29:09.593+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:29:09.593+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:29:09.593+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:29:09.593+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:29:09.593+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:29:09.593+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:29:09.593+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:29:09.593+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:29:09.593+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:29:09.623+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:29:09.623+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:29:09.623+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:29:09.623+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:29:09.625+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:29:09.628+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:29:09.629+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:29:09.629+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:29:09.629+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:29:09.629+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:29:09.633+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:29:09.633+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:29:09.623+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:29:09.641+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:29:09.642+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:29:09.642+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:29:09.647+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:29:09.648+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:29:09.649+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:29:09.649+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:29:09.649+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:29:09.651+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:29:09.655+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:29:09.655+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:29:09.658+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T09:29:09.658+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT c.*
+FROM Course c
+JOIN Student_Course sc ON c.Id = sc.courseId
+WHERE sc.studentId = ?
+]
+2026-03-17T09:29:24.246+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-17T09:29:24.248+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-17T09:29:24.248+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Course]
+2026-03-17T09:29:24.266+05:30 DEBUG 13304 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Course]
+2026-03-17T13:29:02.221+05:30  WARN 13304 --- [StudentManagementSystemEpicdemo] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h47m190ms465µs400ns).
+2026-03-17T14:07:47.747+05:30  INFO 13304 --- [StudentManagementSystemEpicdemo] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-17T14:07:47.764+05:30  INFO 13304 --- [StudentManagementSystemEpicdemo] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-17T14:07:47.765+05:30  INFO 13304 --- [StudentManagementSystemEpicdemo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-17T14:07:47.765+05:30  INFO 13304 --- [StudentManagementSystemEpicdemo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-17T14:22:55.051+05:30  INFO 14080 --- [StudentManagementSystemEpicdemo] [restartedMain] udentManagementSystemEpicdemoApplication : Starting StudentManagementSystemEpicdemoApplication using Java 22.0.2 with PID 14080 (C:\Users\supun_m\Desktop\Epic\student-management-backend\target\classes started by supun_m in C:\Users\supun_m\Desktop\Epic\student-management-backend)
+2026-03-17T14:22:55.054+05:30  INFO 14080 --- [StudentManagementSystemEpicdemo] [restartedMain] udentManagementSystemEpicdemoApplication : No active profile set, falling back to 1 default profile: "default"
+2026-03-17T14:22:55.096+05:30  INFO 14080 --- [StudentManagementSystemEpicdemo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-17T14:22:55.096+05:30  INFO 14080 --- [StudentManagementSystemEpicdemo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-17T14:22:56.175+05:30  INFO 14080 --- [StudentManagementSystemEpicdemo] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-03-17T14:22:56.187+05:30  INFO 14080 --- [StudentManagementSystemEpicdemo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-17T14:22:56.188+05:30  INFO 14080 --- [StudentManagementSystemEpicdemo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-03-17T14:22:56.230+05:30  INFO 14080 --- [StudentManagementSystemEpicdemo] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1132 ms
+2026-03-17T14:22:56.516+05:30  WARN 14080 --- [StudentManagementSystemEpicdemo] [restartedMain] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 56e1d7c1-c8cd-45df-aee3-f4f0872489c9
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-03-17T14:22:56.523+05:30  INFO 14080 --- [StudentManagementSystemEpicdemo] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-03-17T14:22:56.958+05:30  INFO 14080 --- [StudentManagementSystemEpicdemo] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
+2026-03-17T14:22:56.965+05:30  INFO 14080 --- [StudentManagementSystemEpicdemo] [restartedMain] udentManagementSystemEpicdemoApplication : Started StudentManagementSystemEpicdemoApplication in 2.61 seconds (process running for 3.982)
+2026-03-17T14:24:26.032+05:30  INFO 14080 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-17T14:24:26.033+05:30  INFO 14080 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-17T14:24:26.036+05:30  INFO 14080 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-03-17T14:24:26.189+05:30 DEBUG 14080 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T14:24:26.189+05:30 DEBUG 14080 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select * from User where Name = ?]
+2026-03-17T14:24:26.192+05:30  INFO 14080 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-17T14:24:26.622+05:30  INFO 14080 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@28738352
+2026-03-17T14:24:26.624+05:30  INFO 14080 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-17T14:24:28.221+05:30 DEBUG 14080 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-17T14:24:28.285+05:30 DEBUG 14080 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-17T14:24:28.289+05:30 DEBUG 14080 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT c.Id, c.courseName, c.courseCode, c.description, COUNT(sc.studentId) AS studentCount
+FROM Course c
+LEFT JOIN Student_Course sc ON c.Id = sc.courseId
+GROUP BY c.Id, c.courseName, c.courseCode, c.description
+ORDER BYId DESC]
+2026-03-17T14:24:28.898+05:30  WARN 14080 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT c.Id, c.courseName, c.courseCode, c.description, COUNT(sc.studentId) AS studentCount<EOL>FROM Course c<EOL>LEFT JOIN Student_Course sc ON c.Id = sc.courseId<EOL>GROUP BY c.Id, c.courseName, c.courseCode, c.description<EOL>ORDER BYId DESC]]
+2026-03-17T14:24:28.903+05:30 DEBUG 14080 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT c.Id, c.courseName, c.courseCode, c.description, COUNT(sc.studentId) AS studentCount
+FROM Course c
+LEFT JOIN Student_Course sc ON c.Id = sc.courseId
+GROUP BY c.Id, c.courseName, c.courseCode, c.description
+ORDER BYId DESC]
+2026-03-17T14:24:28.907+05:30  WARN 14080 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT c.Id, c.courseName, c.courseCode, c.description, COUNT(sc.studentId) AS studentCount<EOL>FROM Course c<EOL>LEFT JOIN Student_Course sc ON c.Id = sc.courseId<EOL>GROUP BY c.Id, c.courseName, c.courseCode, c.description<EOL>ORDER BYId DESC]]
+2026-03-17T14:29:19.220+05:30 DEBUG 14080 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T14:29:19.221+05:30 DEBUG 14080 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select * from User where Name = ?]
+2026-03-17T14:29:20.794+05:30 DEBUG 14080 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-17T14:29:20.804+05:30 DEBUG 14080 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-17T14:29:20.830+05:30 DEBUG 14080 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT c.Id, c.courseName, c.courseCode, c.description, COUNT(sc.studentId) AS studentCount
+FROM Course c
+LEFT JOIN Student_Course sc ON c.Id = sc.courseId
+GROUP BY c.Id, c.courseName, c.courseCode, c.description
+ORDER BYId DESC]
+2026-03-17T14:29:20.833+05:30  WARN 14080 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT c.Id, c.courseName, c.courseCode, c.description, COUNT(sc.studentId) AS studentCount<EOL>FROM Course c<EOL>LEFT JOIN Student_Course sc ON c.Id = sc.courseId<EOL>GROUP BY c.Id, c.courseName, c.courseCode, c.description<EOL>ORDER BYId DESC]]
+2026-03-17T14:29:20.839+05:30 DEBUG 14080 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT c.Id, c.courseName, c.courseCode, c.description, COUNT(sc.studentId) AS studentCount
+FROM Course c
+LEFT JOIN Student_Course sc ON c.Id = sc.courseId
+GROUP BY c.Id, c.courseName, c.courseCode, c.description
+ORDER BYId DESC]
+2026-03-17T14:29:20.843+05:30  WARN 14080 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT c.Id, c.courseName, c.courseCode, c.description, COUNT(sc.studentId) AS studentCount<EOL>FROM Course c<EOL>LEFT JOIN Student_Course sc ON c.Id = sc.courseId<EOL>GROUP BY c.Id, c.courseName, c.courseCode, c.description<EOL>ORDER BYId DESC]]
+2026-03-17T14:31:32.544+05:30  INFO 14080 --- [StudentManagementSystemEpicdemo] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-17T14:31:32.550+05:30  INFO 14080 --- [StudentManagementSystemEpicdemo] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-17T14:31:32.557+05:30  INFO 14080 --- [StudentManagementSystemEpicdemo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-17T14:31:32.565+05:30  INFO 14080 --- [StudentManagementSystemEpicdemo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-17T14:31:45.996+05:30  INFO 15552 --- [StudentManagementSystemEpicdemo] [restartedMain] udentManagementSystemEpicdemoApplication : Starting StudentManagementSystemEpicdemoApplication using Java 22.0.2 with PID 15552 (C:\Users\supun_m\Desktop\Epic\student-management-backend\target\classes started by supun_m in C:\Users\supun_m\Desktop\Epic\student-management-backend)
+2026-03-17T14:31:45.998+05:30  INFO 15552 --- [StudentManagementSystemEpicdemo] [restartedMain] udentManagementSystemEpicdemoApplication : No active profile set, falling back to 1 default profile: "default"
+2026-03-17T14:31:46.043+05:30  INFO 15552 --- [StudentManagementSystemEpicdemo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-17T14:31:46.043+05:30  INFO 15552 --- [StudentManagementSystemEpicdemo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-17T14:31:47.113+05:30  INFO 15552 --- [StudentManagementSystemEpicdemo] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-03-17T14:31:47.126+05:30  INFO 15552 --- [StudentManagementSystemEpicdemo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-17T14:31:47.127+05:30  INFO 15552 --- [StudentManagementSystemEpicdemo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-03-17T14:31:47.166+05:30  INFO 15552 --- [StudentManagementSystemEpicdemo] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1122 ms
+2026-03-17T14:31:47.431+05:30  WARN 15552 --- [StudentManagementSystemEpicdemo] [restartedMain] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a5e973b3-7109-4b68-9007-0f0703642586
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-03-17T14:31:47.438+05:30  INFO 15552 --- [StudentManagementSystemEpicdemo] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-03-17T14:31:47.880+05:30  INFO 15552 --- [StudentManagementSystemEpicdemo] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
+2026-03-17T14:31:47.886+05:30  INFO 15552 --- [StudentManagementSystemEpicdemo] [restartedMain] udentManagementSystemEpicdemoApplication : Started StudentManagementSystemEpicdemoApplication in 2.43 seconds (process running for 3.358)
+2026-03-17T14:31:56.346+05:30  INFO 15552 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-17T14:31:56.346+05:30  INFO 15552 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-17T14:31:56.348+05:30  INFO 15552 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-03-17T14:31:56.429+05:30 DEBUG 15552 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-17T14:31:56.432+05:30  INFO 15552 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-17T14:31:56.812+05:30  INFO 15552 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@98108f0
+2026-03-17T14:31:56.815+05:30  INFO 15552 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-17T14:31:56.924+05:30 DEBUG 15552 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-17T14:31:56.930+05:30 DEBUG 15552 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT c.Id, c.courseName, c.courseCode, c.description, COUNT(sc.studentId) AS studentCount
+FROM Course c
+LEFT JOIN Student_Course sc ON c.Id = sc.courseId
+GROUP BY c.Id, c.courseName, c.courseCode, c.description
+ORDER BYId DESC]
+2026-03-17T14:31:57.491+05:30  WARN 15552 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT c.Id, c.courseName, c.courseCode, c.description, COUNT(sc.studentId) AS studentCount<EOL>FROM Course c<EOL>LEFT JOIN Student_Course sc ON c.Id = sc.courseId<EOL>GROUP BY c.Id, c.courseName, c.courseCode, c.description<EOL>ORDER BYId DESC]]
+2026-03-17T14:31:57.497+05:30 DEBUG 15552 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT c.Id, c.courseName, c.courseCode, c.description, COUNT(sc.studentId) AS studentCount
+FROM Course c
+LEFT JOIN Student_Course sc ON c.Id = sc.courseId
+GROUP BY c.Id, c.courseName, c.courseCode, c.description
+ORDER BYId DESC]
+2026-03-17T14:31:57.501+05:30  WARN 15552 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT c.Id, c.courseName, c.courseCode, c.description, COUNT(sc.studentId) AS studentCount<EOL>FROM Course c<EOL>LEFT JOIN Student_Course sc ON c.Id = sc.courseId<EOL>GROUP BY c.Id, c.courseName, c.courseCode, c.description<EOL>ORDER BYId DESC]]
+2026-03-17T14:32:01.747+05:30 DEBUG 15552 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T14:32:01.748+05:30 DEBUG 15552 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select * from User where Name = ?]
+2026-03-17T14:32:03.301+05:30 DEBUG 15552 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-17T14:32:03.314+05:30 DEBUG 15552 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-17T14:32:03.320+05:30 DEBUG 15552 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT c.Id, c.courseName, c.courseCode, c.description, COUNT(sc.studentId) AS studentCount
+FROM Course c
+LEFT JOIN Student_Course sc ON c.Id = sc.courseId
+GROUP BY c.Id, c.courseName, c.courseCode, c.description
+ORDER BYId DESC]
+2026-03-17T14:32:03.326+05:30  WARN 15552 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT c.Id, c.courseName, c.courseCode, c.description, COUNT(sc.studentId) AS studentCount<EOL>FROM Course c<EOL>LEFT JOIN Student_Course sc ON c.Id = sc.courseId<EOL>GROUP BY c.Id, c.courseName, c.courseCode, c.description<EOL>ORDER BYId DESC]]
+2026-03-17T14:32:03.331+05:30 DEBUG 15552 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT c.Id, c.courseName, c.courseCode, c.description, COUNT(sc.studentId) AS studentCount
+FROM Course c
+LEFT JOIN Student_Course sc ON c.Id = sc.courseId
+GROUP BY c.Id, c.courseName, c.courseCode, c.description
+ORDER BYId DESC]
+2026-03-17T14:32:03.335+05:30  WARN 15552 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT c.Id, c.courseName, c.courseCode, c.description, COUNT(sc.studentId) AS studentCount<EOL>FROM Course c<EOL>LEFT JOIN Student_Course sc ON c.Id = sc.courseId<EOL>GROUP BY c.Id, c.courseName, c.courseCode, c.description<EOL>ORDER BYId DESC]]
+2026-03-17T14:32:08.555+05:30 DEBUG 15552 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T14:32:08.556+05:30 DEBUG 15552 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select * from User where Name = ?]
+2026-03-17T14:32:10.099+05:30 DEBUG 15552 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-17T14:32:10.110+05:30 DEBUG 15552 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-17T14:32:10.115+05:30 DEBUG 15552 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT c.Id, c.courseName, c.courseCode, c.description, COUNT(sc.studentId) AS studentCount
+FROM Course c
+LEFT JOIN Student_Course sc ON c.Id = sc.courseId
+GROUP BY c.Id, c.courseName, c.courseCode, c.description
+ORDER BYId DESC]
+2026-03-17T14:32:10.120+05:30  WARN 15552 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT c.Id, c.courseName, c.courseCode, c.description, COUNT(sc.studentId) AS studentCount<EOL>FROM Course c<EOL>LEFT JOIN Student_Course sc ON c.Id = sc.courseId<EOL>GROUP BY c.Id, c.courseName, c.courseCode, c.description<EOL>ORDER BYId DESC]]
+2026-03-17T14:32:10.126+05:30 DEBUG 15552 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT c.Id, c.courseName, c.courseCode, c.description, COUNT(sc.studentId) AS studentCount
+FROM Course c
+LEFT JOIN Student_Course sc ON c.Id = sc.courseId
+GROUP BY c.Id, c.courseName, c.courseCode, c.description
+ORDER BYId DESC]
+2026-03-17T14:32:10.129+05:30  WARN 15552 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT c.Id, c.courseName, c.courseCode, c.description, COUNT(sc.studentId) AS studentCount<EOL>FROM Course c<EOL>LEFT JOIN Student_Course sc ON c.Id = sc.courseId<EOL>GROUP BY c.Id, c.courseName, c.courseCode, c.description<EOL>ORDER BYId DESC]]
+2026-03-17T14:34:59.017+05:30  INFO 15552 --- [StudentManagementSystemEpicdemo] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-17T14:34:59.023+05:30  INFO 15552 --- [StudentManagementSystemEpicdemo] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-17T14:34:59.027+05:30  INFO 15552 --- [StudentManagementSystemEpicdemo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-17T14:34:59.034+05:30  INFO 15552 --- [StudentManagementSystemEpicdemo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-17T14:35:05.268+05:30  INFO 4508 --- [StudentManagementSystemEpicdemo] [restartedMain] udentManagementSystemEpicdemoApplication : Starting StudentManagementSystemEpicdemoApplication using Java 22.0.2 with PID 4508 (C:\Users\supun_m\Desktop\Epic\student-management-backend\target\classes started by supun_m in C:\Users\supun_m\Desktop\Epic\student-management-backend)
+2026-03-17T14:35:05.271+05:30  INFO 4508 --- [StudentManagementSystemEpicdemo] [restartedMain] udentManagementSystemEpicdemoApplication : No active profile set, falling back to 1 default profile: "default"
+2026-03-17T14:35:05.333+05:30  INFO 4508 --- [StudentManagementSystemEpicdemo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-17T14:35:05.333+05:30  INFO 4508 --- [StudentManagementSystemEpicdemo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-17T14:35:06.726+05:30  INFO 4508 --- [StudentManagementSystemEpicdemo] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-03-17T14:35:06.745+05:30  INFO 4508 --- [StudentManagementSystemEpicdemo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-17T14:35:06.745+05:30  INFO 4508 --- [StudentManagementSystemEpicdemo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-03-17T14:35:06.805+05:30  INFO 4508 --- [StudentManagementSystemEpicdemo] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1471 ms
+2026-03-17T14:35:07.213+05:30  WARN 4508 --- [StudentManagementSystemEpicdemo] [restartedMain] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 2df15479-37c8-4b10-8424-751af165d5d0
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-03-17T14:35:07.225+05:30  INFO 4508 --- [StudentManagementSystemEpicdemo] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-03-17T14:35:07.784+05:30  INFO 4508 --- [StudentManagementSystemEpicdemo] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
+2026-03-17T14:35:07.790+05:30  INFO 4508 --- [StudentManagementSystemEpicdemo] [restartedMain] udentManagementSystemEpicdemoApplication : Started StudentManagementSystemEpicdemoApplication in 3.073 seconds (process running for 4.139)
+2026-03-17T14:35:11.514+05:30  INFO 4508 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-17T14:35:11.515+05:30  INFO 4508 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-17T14:35:11.516+05:30  INFO 4508 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-17T14:35:11.658+05:30 DEBUG 4508 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T14:35:11.660+05:30 DEBUG 4508 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select * from User where Name = ?]
+2026-03-17T14:35:11.664+05:30  INFO 4508 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-17T14:35:12.045+05:30  INFO 4508 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@32c5e914
+2026-03-17T14:35:12.048+05:30  INFO 4508 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-17T14:35:13.635+05:30 DEBUG 4508 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-17T14:35:13.685+05:30 DEBUG 4508 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-17T14:35:13.688+05:30 DEBUG 4508 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT c.Id, c.courseName, c.courseCode, c.description, COUNT(sc.studentId) AS studentCount
+FROM Course c
+LEFT JOIN Student_Course sc ON c.Id = sc.courseId
+GROUP BY c.Id, c.courseName, c.courseCode, c.description
+ORDER BYId DESC]
+2026-03-17T14:35:14.247+05:30  WARN 4508 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT c.Id, c.courseName, c.courseCode, c.description, COUNT(sc.studentId) AS studentCount<EOL>FROM Course c<EOL>LEFT JOIN Student_Course sc ON c.Id = sc.courseId<EOL>GROUP BY c.Id, c.courseName, c.courseCode, c.description<EOL>ORDER BYId DESC]]
+2026-03-17T14:35:14.253+05:30 DEBUG 4508 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT c.Id, c.courseName, c.courseCode, c.description, COUNT(sc.studentId) AS studentCount
+FROM Course c
+LEFT JOIN Student_Course sc ON c.Id = sc.courseId
+GROUP BY c.Id, c.courseName, c.courseCode, c.description
+ORDER BYId DESC]
+2026-03-17T14:35:14.256+05:30  WARN 4508 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT c.Id, c.courseName, c.courseCode, c.description, COUNT(sc.studentId) AS studentCount<EOL>FROM Course c<EOL>LEFT JOIN Student_Course sc ON c.Id = sc.courseId<EOL>GROUP BY c.Id, c.courseName, c.courseCode, c.description<EOL>ORDER BYId DESC]]
+2026-03-17T14:37:38.935+05:30  INFO 4508 --- [StudentManagementSystemEpicdemo] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-17T14:37:38.942+05:30  INFO 4508 --- [StudentManagementSystemEpicdemo] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-17T14:37:38.948+05:30  INFO 4508 --- [StudentManagementSystemEpicdemo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-17T14:37:38.956+05:30  INFO 4508 --- [StudentManagementSystemEpicdemo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-17T14:37:57.713+05:30  INFO 15752 --- [StudentManagementSystemEpicdemo] [restartedMain] udentManagementSystemEpicdemoApplication : Starting StudentManagementSystemEpicdemoApplication using Java 22.0.2 with PID 15752 (C:\Users\supun_m\Desktop\Epic\student-management-backend\target\classes started by supun_m in C:\Users\supun_m\Desktop\Epic\student-management-backend)
+2026-03-17T14:37:57.717+05:30  INFO 15752 --- [StudentManagementSystemEpicdemo] [restartedMain] udentManagementSystemEpicdemoApplication : No active profile set, falling back to 1 default profile: "default"
+2026-03-17T14:37:57.768+05:30  INFO 15752 --- [StudentManagementSystemEpicdemo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-17T14:37:57.768+05:30  INFO 15752 --- [StudentManagementSystemEpicdemo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-17T14:37:59.224+05:30  INFO 15752 --- [StudentManagementSystemEpicdemo] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-03-17T14:37:59.240+05:30  INFO 15752 --- [StudentManagementSystemEpicdemo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-17T14:37:59.241+05:30  INFO 15752 --- [StudentManagementSystemEpicdemo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-03-17T14:37:59.294+05:30  INFO 15752 --- [StudentManagementSystemEpicdemo] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1524 ms
+2026-03-17T14:37:59.654+05:30  WARN 15752 --- [StudentManagementSystemEpicdemo] [restartedMain] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 79cf5844-9742-4684-9db5-1c3cd620ca43
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-03-17T14:37:59.663+05:30  INFO 15752 --- [StudentManagementSystemEpicdemo] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-03-17T14:38:00.255+05:30  INFO 15752 --- [StudentManagementSystemEpicdemo] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
+2026-03-17T14:38:00.262+05:30  INFO 15752 --- [StudentManagementSystemEpicdemo] [restartedMain] udentManagementSystemEpicdemoApplication : Started StudentManagementSystemEpicdemoApplication in 3.203 seconds (process running for 4.231)
+2026-03-17T14:38:02.972+05:30  INFO 15752 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-17T14:38:02.973+05:30  INFO 15752 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-17T14:38:02.976+05:30  INFO 15752 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-03-17T14:38:03.130+05:30 DEBUG 15752 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-17T14:38:03.131+05:30 DEBUG 15752 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select * from User where Name = ?]
+2026-03-17T14:38:03.135+05:30  INFO 15752 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-17T14:38:03.527+05:30  INFO 15752 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45b3cbab
+2026-03-17T14:38:03.529+05:30  INFO 15752 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-17T14:38:05.135+05:30 DEBUG 15752 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-17T14:38:05.190+05:30 DEBUG 15752 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT * FROM Student ORDER BY Id DESC]
+2026-03-17T14:38:05.193+05:30 DEBUG 15752 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT c.Id, c.courseName, c.courseCode, c.description,
+       COUNT(sc.studentId) AS studentCount
+FROM Course c
+LEFT JOIN Student_Course sc ON c.Id = sc.courseId
+GROUP BY c.Id, c.courseName, c.courseCode, c.description
+ORDER BYId DESC]
+2026-03-17T14:38:05.722+05:30 ERROR 15752 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] c.e.s.repository.impl.CourseRepository   : Error in getAllCourses(sort): StatementCallback; bad SQL grammar [SELECT c.Id, c.courseName, c.courseCode, c.description,
+       COUNT(sc.studentId) AS studentCount
+FROM Course c
+LEFT JOIN Student_Course sc ON c.Id = sc.courseId
+GROUP BY c.Id, c.courseName, c.courseCode, c.description
+ORDER BYId DESC]
+
+org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT c.Id, c.courseName, c.courseCode, c.description,
+       COUNT(sc.studentId) AS studentCount
+FROM Course c
+LEFT JOIN Student_Course sc ON c.Id = sc.courseId
+GROUP BY c.Id, c.courseName, c.courseCode, c.description
+ORDER BYId DESC]
+	at org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:112) ~[spring-jdbc-7.0.3.jar:7.0.3]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:102) ~[spring-jdbc-7.0.3.jar:7.0.3]
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1549) ~[spring-jdbc-7.0.3.jar:7.0.3]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:427) ~[spring-jdbc-7.0.3.jar:7.0.3]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:491) ~[spring-jdbc-7.0.3.jar:7.0.3]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:501) ~[spring-jdbc-7.0.3.jar:7.0.3]
+	at com.epic.studentmanagementsystemepicdemo.repository.impl.CourseRepository.getAllCourses(CourseRepository.java:97) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:135) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719) ~[spring-aop-7.0.3.jar:7.0.3]
+	at com.epic.studentmanagementsystemepicdemo.repository.impl.CourseRepository$$SpringCGLIB$$0.getAllCourses(<generated>) ~[classes/:na]
+	at com.epic.studentmanagementsystemepicdemo.service.Impl.CourseServiceImpl.getAllCourses(CourseServiceImpl.java:31) ~[classes/:na]
+	at com.epic.studentmanagementsystemepicdemo.controller.CourseController.getAllCourses(CourseController.java:31) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:235) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:371) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317) ~[spring-security-config-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BYId DESC' at line 6
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112) ~[mysql-connector-j-9.5.0.jar:9.5.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114) ~[mysql-connector-j-9.5.0.jar:9.5.0]
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1311) ~[mysql-connector-j-9.5.0.jar:9.5.0]
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java) ~[HikariCP-7.0.2.jar:na]
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:478) ~[spring-jdbc-7.0.3.jar:7.0.3]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:412) ~[spring-jdbc-7.0.3.jar:7.0.3]
+	... 102 common frames omitted
+
+2026-03-17T14:38:05.741+05:30  WARN 15752 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT c.Id, c.courseName, c.courseCode, c.description,<EOL>       COUNT(sc.studentId) AS studentCount<EOL>FROM Course c<EOL>LEFT JOIN Student_Course sc ON c.Id = sc.courseId<EOL>GROUP BY c.Id, c.courseName, c.courseCode, c.description<EOL>ORDER BYId DESC]]
+2026-03-17T14:38:05.745+05:30 DEBUG 15752 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT c.Id, c.courseName, c.courseCode, c.description,
+       COUNT(sc.studentId) AS studentCount
+FROM Course c
+LEFT JOIN Student_Course sc ON c.Id = sc.courseId
+GROUP BY c.Id, c.courseName, c.courseCode, c.description
+ORDER BYId DESC]
+2026-03-17T14:38:05.746+05:30 ERROR 15752 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] c.e.s.repository.impl.CourseRepository   : Error in getAllCourses(sort): StatementCallback; bad SQL grammar [SELECT c.Id, c.courseName, c.courseCode, c.description,
+       COUNT(sc.studentId) AS studentCount
+FROM Course c
+LEFT JOIN Student_Course sc ON c.Id = sc.courseId
+GROUP BY c.Id, c.courseName, c.courseCode, c.description
+ORDER BYId DESC]
+
+org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT c.Id, c.courseName, c.courseCode, c.description,
+       COUNT(sc.studentId) AS studentCount
+FROM Course c
+LEFT JOIN Student_Course sc ON c.Id = sc.courseId
+GROUP BY c.Id, c.courseName, c.courseCode, c.description
+ORDER BYId DESC]
+	at org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:112) ~[spring-jdbc-7.0.3.jar:7.0.3]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:102) ~[spring-jdbc-7.0.3.jar:7.0.3]
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1549) ~[spring-jdbc-7.0.3.jar:7.0.3]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:427) ~[spring-jdbc-7.0.3.jar:7.0.3]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:491) ~[spring-jdbc-7.0.3.jar:7.0.3]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:501) ~[spring-jdbc-7.0.3.jar:7.0.3]
+	at com.epic.studentmanagementsystemepicdemo.repository.impl.CourseRepository.getAllCourses(CourseRepository.java:97) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:135) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719) ~[spring-aop-7.0.3.jar:7.0.3]
+	at com.epic.studentmanagementsystemepicdemo.repository.impl.CourseRepository$$SpringCGLIB$$0.getAllCourses(<generated>) ~[classes/:na]
+	at com.epic.studentmanagementsystemepicdemo.service.Impl.CourseServiceImpl.getAllCourses(CourseServiceImpl.java:31) ~[classes/:na]
+	at com.epic.studentmanagementsystemepicdemo.controller.CourseController.getAllCourses(CourseController.java:31) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:235) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:371) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317) ~[spring-security-config-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BYId DESC' at line 6
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112) ~[mysql-connector-j-9.5.0.jar:9.5.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114) ~[mysql-connector-j-9.5.0.jar:9.5.0]
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1311) ~[mysql-connector-j-9.5.0.jar:9.5.0]
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java) ~[HikariCP-7.0.2.jar:na]
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:478) ~[spring-jdbc-7.0.3.jar:7.0.3]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:412) ~[spring-jdbc-7.0.3.jar:7.0.3]
+	... 102 common frames omitted
+
+2026-03-17T14:38:05.751+05:30  WARN 15752 --- [StudentManagementSystemEpicdemo] [http-nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT c.Id, c.courseName, c.courseCode, c.description,<EOL>       COUNT(sc.studentId) AS studentCount<EOL>FROM Course c<EOL>LEFT JOIN Student_Course sc ON c.Id = sc.courseId<EOL>GROUP BY c.Id, c.courseName, c.courseCode, c.description<EOL>ORDER BYId DESC]]
+2026-03-17T14:40:07.209+05:30  INFO 15752 --- [StudentManagementSystemEpicdemo] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-17T14:40:07.216+05:30  INFO 15752 --- [StudentManagementSystemEpicdemo] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-17T14:40:07.222+05:30  INFO 15752 --- [StudentManagementSystemEpicdemo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-17T14:40:07.233+05:30  INFO 15752 --- [StudentManagementSystemEpicdemo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

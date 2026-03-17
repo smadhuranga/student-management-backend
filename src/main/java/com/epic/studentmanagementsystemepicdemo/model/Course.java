@@ -9,5 +9,6 @@ public class Course {
     private String courseName;
     private String courseCode;
     private String description;
+    private Integer studentCount;
 
 }
