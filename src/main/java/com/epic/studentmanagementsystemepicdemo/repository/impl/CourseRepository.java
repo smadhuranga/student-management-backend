@@ -39,12 +39,10 @@ public class CourseRepository implements CourseRepo {
         if (sortBy == null || !allowedSortColumns.contains(sortBy)) {
             sortBy = "id";
         }
-
         if (sortOrder == null ||
                 (!sortOrder.equalsIgnoreCase("asc") && !sortOrder.equalsIgnoreCase("desc"))) {
             sortOrder = "desc";
         }
-
         String dbSortColumn;
         switch (sortBy) {
             case "courseName":

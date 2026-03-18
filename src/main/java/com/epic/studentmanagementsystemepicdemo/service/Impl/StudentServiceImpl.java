@@ -63,23 +63,15 @@ public class StudentServiceImpl implements StudentService {
                     "Email " + request.getEmail() + " is already in use by another student."
             );
         }
-
         Student student = new Student();
         student.setId(id);
         student.setFirstName(request.getFirstName());
         student.setLastName(request.getLastName());
         student.setEmail(request.getEmail());
-
-
         student.setDateOfBirth(request.getDateOfBirth());
         student.setEnrollmentDate(request.getEnrollmentDate());
-
         studentRepository.update(student);
-
-
         enrollmentRepo.removeEnrollmentsByStudent(id);
-
-
         if (request.getCourseIds() != null) {
             for (Integer courseId : request.getCourseIds()) {
 
@@ -106,11 +98,7 @@ public class StudentServiceImpl implements StudentService {
     @Override
     @Transactional
     public void deleteStudentById(int studentId) {
-
-
         enrollmentRepo.removeEnrollmentsByStudent(studentId);
-
-
         studentRepository.delete(studentId);
     }
 

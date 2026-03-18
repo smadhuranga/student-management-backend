@@ -31,19 +31,15 @@ public class AuthServiceImpl implements AuthService {
         if (user.getName() == null || user.getPassword() == null) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Username or password cannot be empty");
         }
-
         try {
             User dbUser = userRepository.findByUsername(user.getName());
 
             if (!dbUser.getPassword().equals(user.getPassword())) {
                 throw new ResponseStatusException(HttpStatus.UNAUTHORIZED, "Username or password is incorrect");
             }
-
             return "User Login successfully";
         } catch (ResourceNotFoundException e) {
             throw new ResponseStatusException(HttpStatus.UNAUTHORIZED, "Username or password is incorrect");
         }
-
-
     }
 }
