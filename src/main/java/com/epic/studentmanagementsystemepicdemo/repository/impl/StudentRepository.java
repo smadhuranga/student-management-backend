@@ -5,7 +5,6 @@
  */
 
 package com.epic.studentmanagementsystemepicdemo.repository.impl;
-
 import com.epic.studentmanagementsystemepicdemo.exception.ResourceNotFoundException;
 import com.epic.studentmanagementsystemepicdemo.model.Student;
 import com.epic.studentmanagementsystemepicdemo.repository.StudentRepo;
@@ -13,7 +12,6 @@ import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
-
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
