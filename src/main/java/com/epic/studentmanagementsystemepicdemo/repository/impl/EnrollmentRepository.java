@@ -22,10 +22,10 @@ public class EnrollmentRepository implements EnrollmentRepo {
     @Override
     public void enrollStudent(int studentId, int courseId) {
         String sql = """
-            INSERT INTO Student_Course
-            (studentId, courseId, enrollmentDate)
-            VALUES (?, ?, CURDATE())
-            """;
+                INSERT INTO Student_Course
+                (studentId, courseId, enrollmentDate)
+                VALUES (?, ?, CURDATE())
+                """;
         jdbcTemplate.update(sql, studentId, courseId);
     }
 

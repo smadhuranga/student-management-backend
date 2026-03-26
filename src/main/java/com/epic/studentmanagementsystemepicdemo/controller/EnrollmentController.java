@@ -1,6 +1,7 @@
 package com.epic.studentmanagementsystemepicdemo.controller;
 
 import com.epic.studentmanagementsystemepicdemo.dto.CourseStudentDTO;
+import com.epic.studentmanagementsystemepicdemo.dto.EnrollmentRequestDTO;
 import com.epic.studentmanagementsystemepicdemo.dto.StudentCourseDTO;
 import com.epic.studentmanagementsystemepicdemo.model.Course;
 import com.epic.studentmanagementsystemepicdemo.model.Student;
@@ -11,7 +12,7 @@ import java.util.List;
 
 @RestController
 @CrossOrigin
-@RequestMapping("/api/v1/enrollment")
+@RequestMapping("/api/v1")
 public class EnrollmentController {
 
     private final EnrollmentService enrollmentService;
@@ -20,38 +21,35 @@ public class EnrollmentController {
         this.enrollmentService = enrollmentService;
     }
 
-    @PostMapping("/enroll")
-    public String enroll(@RequestParam int studentId, @RequestParam int courseId) {
-        enrollmentService.enrollStudent(studentId, courseId);
+    @PostMapping("/enrollments")
+    public String enroll(@RequestBody EnrollmentRequestDTO request) {
+        enrollmentService.enrollStudent(request.getStudentId(), request.getCourseId());
         return "Student enrolled successfully";
     }
 
-    @DeleteMapping("/remove")
-    public String remove(@RequestParam int studentId, @RequestParam int courseId) {
-        enrollmentService.removeStudent(studentId, courseId);
+    @DeleteMapping("/enrollments")
+    public String remove(@RequestBody EnrollmentRequestDTO request) {
+        enrollmentService.removeStudent(request.getStudentId(), request.getCourseId());
         return "Enrollment removed";
     }
 
-    @GetMapping("/student/{studentId}")
-    public List<Course> getCourses(@PathVariable int studentId) {
+    @GetMapping("/students/{studentId}/courses")
+    public List<Course> getCoursesByStudent(@PathVariable int studentId) {
         return enrollmentService.getCoursesByStudent(studentId);
     }
 
-    @GetMapping("/course/{courseId}")
-    public List<Student> getStudents(@PathVariable int courseId) {
+    @GetMapping("/courses/{courseId}/students/basic")
+    public List<Student> getStudentsByCourse(@PathVariable int courseId) {
         return enrollmentService.getStudentsByCourse(courseId);
     }
 
-
-    @GetMapping("/student/{studentId}/details")
+    @GetMapping("/students/{studentId}/courses/details")
     public List<StudentCourseDTO> getStudentCourseDetails(@PathVariable int studentId) {
         return enrollmentService.getStudentCourseDetails(studentId);
     }
 
-
-    @GetMapping("/course/{courseId}/details")
+    @GetMapping("/courses/{courseId}/students")
     public List<CourseStudentDTO> getCourseStudentDetails(@PathVariable int courseId) {
         return enrollmentService.getCourseStudentDetails(courseId);
     }
 }
-

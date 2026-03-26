@@ -5,6 +5,7 @@
  */
 
 package com.epic.studentmanagementsystemepicdemo.repository.impl;
+
 import com.epic.studentmanagementsystemepicdemo.exception.ResourceNotFoundException;
 import com.epic.studentmanagementsystemepicdemo.model.Student;
 import com.epic.studentmanagementsystemepicdemo.repository.StudentRepo;
@@ -12,6 +13,7 @@ import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
+
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -40,9 +42,9 @@ public class StudentRepository implements StudentRepo {
     @Override
     public int saveStudent(Student s) {
         String sql = """
-            INSERT INTO Student (firstName, lastName, email, dateOfBirth, enrollmentDate)
-            VALUES (?, ?, ?, ?, ?)
-        """;
+                    INSERT INTO Student (firstName, lastName, email, dateOfBirth, enrollmentDate)
+                    VALUES (?, ?, ?, ?, ?)
+                """;
         jdbcTemplate.update(sql,
                 s.getFirstName(),
                 s.getLastName(),
@@ -103,10 +105,10 @@ public class StudentRepository implements StudentRepo {
     @Override
     public int update(Student s) {
         String sql = """
-            UPDATE Student
-            SET firstName=?, lastName=?, email=?, dateOfBirth=?, enrollmentDate=?
-            WHERE id=?
-        """;
+                    UPDATE Student
+                    SET firstName=?, lastName=?, email=?, dateOfBirth=?, enrollmentDate=?
+                    WHERE id=?
+                """;
         int rows = jdbcTemplate.update(sql,
                 s.getFirstName(),
                 s.getLastName(),
